@@ -110,6 +110,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void avviaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_avviaActionPerformed
         // TODO add your handling code here:
+        livello2 l = new livello2();
     }//GEN-LAST:event_avviaActionPerformed
 
     /**

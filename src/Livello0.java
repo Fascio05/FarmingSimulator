@@ -749,7 +749,7 @@ public class Livello0 extends javax.swing.JFrame {
         jLabel180.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
         getContentPane().add(jLabel180);
 
-        setBounds(0, 0, 644, 367);
+        setBounds(0, 0, 656, 368);
     }// </editor-fold>//GEN-END:initComponents
 
     /**

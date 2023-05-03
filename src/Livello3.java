@@ -2333,7 +2333,7 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel576.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO FIENO PROG FINALE.png"))); // NOI18N
         getContentPane().add(jLabel576);
 
-        setBounds(0, 0, 644, 367);
+        setBounds(0, 0, 656, 368);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
