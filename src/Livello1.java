@@ -1038,7 +1038,7 @@ public class Livello1 extends javax.swing.JFrame {
         jLabel252.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel252);
 
-        setBounds(0, 0, 644, 367);
+        setBounds(0, 0, 656, 368);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
