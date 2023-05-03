@@ -14,7 +14,7 @@ public class Livello1 extends javax.swing.JFrame {
      */
     public Livello1() {
         initComponents();
-        //sdfsdf
+        
     }
 
     /**
