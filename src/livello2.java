@@ -14,7 +14,7 @@ import javax.swing.*;
  */
 public class livello2 extends javax.swing.JFrame {
 
-    ArrayList al = new ArrayList();
+    ArrayList<JLabel> al = new ArrayList<JLabel>();
     
     public livello2() {
         initComponents();
@@ -23,11 +23,13 @@ public class livello2 extends javax.swing.JFrame {
         setLocationRelativeTo(null); //centrare nello schermo
         setVisible(true);
         
-        JLabel l = (JLabel)al.get(1);
-        l.setIcon(new ImageIcon("\\src\\immagini\\blu.png"));
-        al.set(1,l);
-        
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        addKeyListener(new MyKeyListener());
+
+        /*for (int i = 1; i <= 350; i++) {
+            JLabel label = new JLabel();
+            label.setName("JLabel" + i); //imposta il nome della JLabel concatenando "JLabel" con il valore corrente di i
+            al.add(label);
+        }*/
         
         
         al.add(jLabel1);  //memorizzazione mappa nell'arraylist (cella 0 = jlabel1 ecc...)
@@ -379,8 +381,7 @@ public class livello2 extends javax.swing.JFrame {
         al.add(jLabel347);
         al.add(jLabel348);
         al.add(jLabel349);
-        al.add(jLabel350);
-
+        al.add(jLabel350); 
      }
 
     /**
@@ -747,6 +748,8 @@ public class livello2 extends javax.swing.JFrame {
         setTitle("Livello 2");
         setResizable(false);
         getContentPane().setLayout(new java.awt.GridLayout(14, 25));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV2-49x49.png"))); // NOI18N
         getContentPane().add(jLabel1);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV2-49x49.png"))); // NOI18N
