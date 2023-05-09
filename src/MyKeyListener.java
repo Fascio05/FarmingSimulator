@@ -14,10 +14,28 @@ import javax.swing.*;
 public class MyKeyListener implements KeyListener {
 
     private Timer timer;
+    int lvCorrente = 2;
+    KeyEvent x;
     
     public MyKeyListener(){
-        MyActionListener a = new MyActionListener();
-        timer = new Timer(300,a);
+        timer = new Timer(300, new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if(lvCorrente == 0){
+                    
+                }
+                if(lvCorrente == 1){
+                    
+                }
+                if(lvCorrente == 2){
+                    if(x.getKeyCode() == KeyEvent.VK_W){
+                        System.out.println("W");
+                    }
+                }
+                if(lvCorrente == 3){
+                    
+                }
+            }
+            });
         timer.setRepeats(true);
     }
     
@@ -28,6 +46,7 @@ public class MyKeyListener implements KeyListener {
 
     @Override
     public void keyPressed(KeyEvent e) {
+        x = e;
         if (e.getKeyCode() == KeyEvent.VK_W) {
             timer.start();
         }
