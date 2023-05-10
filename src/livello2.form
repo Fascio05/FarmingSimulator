@@ -1823,8 +1823,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel257">
       <Properties>
+        <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
+          <Image iconType="3" name="/immagini livelli/taglia erba.jpg"/>
         </Property>
       </Properties>
     </Component>

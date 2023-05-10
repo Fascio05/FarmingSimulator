@@ -23,7 +23,7 @@ public class livello2 extends javax.swing.JFrame {
         setLocationRelativeTo(null); //centrare nello schermo
         setVisible(true);
         
-        addKeyListener(new MyKeyListener());
+        addKeyListener(new MyKeyListener(this));
 
         /*for (int i = 1; i <= 350; i++) {
             JLabel label = new JLabel();
@@ -1517,7 +1517,8 @@ public class livello2 extends javax.swing.JFrame {
         jLabel256.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel256);
 
-        jLabel257.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel257.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel257.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N
         getContentPane().add(jLabel257);
 
         jLabel258.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
