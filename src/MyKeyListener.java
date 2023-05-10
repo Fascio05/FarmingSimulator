@@ -16,8 +16,11 @@ public class MyKeyListener implements KeyListener {
     private Timer timer;
     int lvCorrente = 2;
     KeyEvent x;
+    livello2 f;
+    int cont=256;
     
-    public MyKeyListener(){
+    public MyKeyListener(livello2 f){
+        this.f=f;
         timer = new Timer(300, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 if(lvCorrente == 0){
@@ -28,7 +31,28 @@ public class MyKeyListener implements KeyListener {
                 }
                 if(lvCorrente == 2){
                     if(x.getKeyCode() == KeyEvent.VK_W){
-                        System.out.println("W");
+                        ((JLabel)f.al.get(cont)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
+                        System.out.println("w");
+                        ((JLabel)f.al.get(cont-25)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
+                        cont=cont-25;
+                    }
+                    if(x.getKeyCode() == KeyEvent.VK_A){
+                        ((JLabel)f.al.get(cont)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
+                        System.out.println("a");
+                        ((JLabel)f.al.get(cont-1)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
+                        cont=cont-1;
+                    }
+                    if(x.getKeyCode() == KeyEvent.VK_D){
+                        ((JLabel)f.al.get(cont)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
+                        System.out.println("d");
+                        ((JLabel)f.al.get(cont+1)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
+                        cont=cont+1;
+                    }
+                    if(x.getKeyCode() == KeyEvent.VK_S){
+                        ((JLabel)f.al.get(cont)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
+                        System.out.println("s");
+                        ((JLabel)f.al.get(cont+25)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
+                        cont=cont+25;
                     }
                 }
                 if(lvCorrente == 3){
@@ -36,6 +60,7 @@ public class MyKeyListener implements KeyListener {
                 }
             }
             });
+        
         timer.setRepeats(true);
     }
     
