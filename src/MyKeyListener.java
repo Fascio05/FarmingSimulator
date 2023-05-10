@@ -21,14 +21,43 @@ public class MyKeyListener implements KeyListener {
     livello2 f2;
     Livello3 f3;
     int cont=256;
-    
+    /*
     public MyKeyListener(Livello0 f0){
-        this.f1=f1;
-
-    }
+        this.f0=f0;
+        timer = new Timer(300, new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if(lvCorrente == 2){
+                    if(x.getKeyCode() == KeyEvent.VK_W){
+                        ((JLabel)f0.al.get(cont)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
+                        System.out.println("w");
+                        ((JLabel)f0.al.get(cont-25)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
+                        cont=cont-25;
+                    }
+                    if(x.getKeyCode() == KeyEvent.VK_A){
+                        ((JLabel)f0.al.get(cont)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
+                        System.out.println("a");
+                        ((JLabel)f0.al.get(cont-1)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
+                        cont=cont-1;
+                    }
+                    if(x.getKeyCode() == KeyEvent.VK_D){
+                        ((JLabel)f0.al.get(cont)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
+                        System.out.println("d");
+                        ((JLabel)f0.al.get(cont+1)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
+                        cont=cont+1;
+                    }
+                    if(x.getKeyCode() == KeyEvent.VK_S){
+                        ((JLabel)f0.al.get(cont)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
+                        System.out.println("s");
+                        ((JLabel)f0.al.get(cont+25)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
+                        cont=cont+25;
+                    }
+                }
+            }
+        });
+    }*/
     
     public MyKeyListener(Livello1 f1){
-        this.f3=f3;
+        this.f1=f1;
         timer = new Timer(300, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 if(lvCorrente == 2){
@@ -58,17 +87,13 @@ public class MyKeyListener implements KeyListener {
                     }
                 }
             }
+        });
+    }
     
     public MyKeyListener(livello2 f2){
         this.f2=f2;
         timer = new Timer(300, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                if(lvCorrente == 0){
-                    
-                }
-                if(lvCorrente == 1){
-                    
-                }
                 if(lvCorrente == 2){
                     if(x.getKeyCode() == KeyEvent.VK_W){
                         ((JLabel)f2.al.get(cont)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
@@ -95,19 +120,44 @@ public class MyKeyListener implements KeyListener {
                         cont=cont+25;
                     }
                 }
-                if(lvCorrente == 3){
-                    
-                }
             }
-            });
-        
-        timer.setRepeats(true);
+        });
     }
     
+    /*
     public MyKeyListener(Livello3 f3){
         this.f3=f3;
-
-    }
+        timer = new Timer(300, new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if(lvCorrente == 2){
+                    if(x.getKeyCode() == KeyEvent.VK_W){
+                        ((JLabel)f3.al.get(cont)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
+                        System.out.println("w");
+                        ((JLabel)f3.al.get(cont-25)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
+                        cont=cont-25;
+                    }
+                    if(x.getKeyCode() == KeyEvent.VK_A){
+                        ((JLabel)f3.al.get(cont)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
+                        System.out.println("a");
+                        ((JLabel)f3.al.get(cont-1)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
+                        cont=cont-1;
+                    }
+                    if(x.getKeyCode() == KeyEvent.VK_D){
+                        ((JLabel)f3.al.get(cont)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
+                        System.out.println("d");
+                        ((JLabel)f3.al.get(cont+1)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
+                        cont=cont+1;
+                    }
+                    if(x.getKeyCode() == KeyEvent.VK_S){
+                        ((JLabel)f3.al.get(cont)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
+                        System.out.println("s");
+                        ((JLabel)f3.al.get(cont+25)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
+                        cont=cont+25;
+                    }
+                }
+            }
+        });
+    }*/
     
     @Override
     public void keyTyped(KeyEvent e) {
