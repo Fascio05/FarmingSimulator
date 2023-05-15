@@ -2,6 +2,7 @@
 import java.awt.*;
 import java.util.ArrayList;
 import javax.swing.*;
+import javax.swing.SpringLayout.Constraints;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -26,12 +27,13 @@ public class livello2 extends javax.swing.JFrame {
         {0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1},
         {0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0},
         {0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0},
-        {0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0},
+        {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0},
         {0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0,0},
-        {0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,1,1,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}};
+        {0,1,1,1,0,0,0,0,3,0,0,0,0,0,1,1,1,0,0,1,1,0,0,0,0},
+        {4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4}};
     
-    public livello2() {
+
+                     public livello2() {
         initComponents();
         //setSize(960,540); pc piccoli
         setSize(1248,702); //pc normali
@@ -46,7 +48,12 @@ public class livello2 extends javax.swing.JFrame {
             al.add(label);
         }*/
         
-        
+        JButton button = new JButton("Bottone esteso");
+        GridBagConstraints bagC= new GridBagConstraints();
+        bagC.gridx= 11;
+        bagC.gridy= 13;
+        bagC.gridwidth=3;
+        bagC.gridheight=0;
         al.add(jLabel1);  //memorizzazione mappa nell'arraylist (cella 0 = jlabel1 ecc...)
         al.add(jLabel2);
         al.add(jLabel3);
@@ -383,7 +390,7 @@ public class livello2 extends javax.swing.JFrame {
         al.add(jLabel334);
         al.add(jLabel335);
         al.add(jLabel336);
-        al.add(jLabel337);
+        al.add(button, bagC);
         al.add(jLabel338);
         al.add(jLabel339);
         al.add(jLabel340);
@@ -747,8 +754,8 @@ public class livello2 extends javax.swing.JFrame {
         jLabel337 = new javax.swing.JLabel();
         jLabel338 = new javax.swing.JLabel();
         jLabel339 = new javax.swing.JLabel();
-        jLabel340 = new javax.swing.JLabel();
         jLabel341 = new javax.swing.JLabel();
+        jLabel340 = new javax.swing.JLabel();
         jLabel342 = new javax.swing.JLabel();
         jLabel343 = new javax.swing.JLabel();
         jLabel344 = new javax.swing.JLabel();
@@ -1533,7 +1540,7 @@ public class livello2 extends javax.swing.JFrame {
         getContentPane().add(jLabel256);
 
         jLabel257.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel257.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N
+        jLabel257.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel257);
 
         jLabel258.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1689,7 +1696,7 @@ public class livello2 extends javax.swing.JFrame {
         jLabel308.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel308);
 
-        jLabel309.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel309.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N
         getContentPane().add(jLabel309);
 
         jLabel310.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1782,11 +1789,11 @@ public class livello2 extends javax.swing.JFrame {
         jLabel339.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel339);
 
-        jLabel340.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
-        getContentPane().add(jLabel340);
-
         jLabel341.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel341);
+
+        jLabel340.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        getContentPane().add(jLabel340);
 
         jLabel342.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel342);
@@ -1806,13 +1813,13 @@ public class livello2 extends javax.swing.JFrame {
         jLabel347.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel347);
 
-        jLabel348.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel348.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/cuore pieno 49 x 49.png"))); // NOI18N
         getContentPane().add(jLabel348);
 
-        jLabel349.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel349.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/cuore pieno 49 x 49.png"))); // NOI18N
         getContentPane().add(jLabel349);
 
-        jLabel350.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel350.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/cuore pieno 49 x 49.png"))); // NOI18N
         getContentPane().add(jLabel350);
 
         setSize(new java.awt.Dimension(656, 368));

@@ -1825,7 +1825,7 @@
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/taglia erba.jpg"/>
+          <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
         </Property>
       </Properties>
     </Component>
@@ -2189,7 +2189,7 @@
     <Component class="javax.swing.JLabel" name="jLabel309">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
+          <Image iconType="3" name="/immagini livelli/taglia erba.jpg"/>
         </Property>
       </Properties>
     </Component>
@@ -2403,14 +2403,14 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel340">
+    <Component class="javax.swing.JLabel" name="jLabel341">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel341">
+    <Component class="javax.swing.JLabel" name="jLabel340">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
@@ -2462,21 +2462,21 @@
     <Component class="javax.swing.JLabel" name="jLabel348">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
+          <Image iconType="3" name="/immagini/cuore pieno 49 x 49.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel349">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
+          <Image iconType="3" name="/immagini/cuore pieno 49 x 49.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel350">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
+          <Image iconType="3" name="/immagini/cuore pieno 49 x 49.png"/>
         </Property>
       </Properties>
     </Component>
