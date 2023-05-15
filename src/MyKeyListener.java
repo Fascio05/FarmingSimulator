@@ -67,25 +67,21 @@ public class MyKeyListener implements KeyListener {
                         ((JLabel)f1.al.get(cont)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
                         System.out.println("w");
                         ((JLabel)f1.al.get(cont-25)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
-                        cont=cont-25;
                     }
                     if(x.getKeyCode() == KeyEvent.VK_A){
                         ((JLabel)f1.al.get(cont)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
                         System.out.println("a");
                         ((JLabel)f1.al.get(cont-1)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
-                        cont=cont-1;
                     }
                     if(x.getKeyCode() == KeyEvent.VK_D){
                         ((JLabel)f1.al.get(cont)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
                         System.out.println("d");
                         ((JLabel)f1.al.get(cont+1)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
-                        cont=cont+1;
                     }
                     if(x.getKeyCode() == KeyEvent.VK_S){
                         ((JLabel)f1.al.get(cont)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
                         System.out.println("s");
                         ((JLabel)f1.al.get(cont+25)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
-                        cont=cont+25;
                     }
                 }
             }
@@ -102,7 +98,6 @@ public class MyKeyListener implements KeyListener {
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f2.al.get((v*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
                             ((JLabel)f2.al.get(((v-1)*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
-                            cont=cont-25;
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_A){
@@ -110,7 +105,6 @@ public class MyKeyListener implements KeyListener {
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f2.al.get((v*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
                             ((JLabel)f2.al.get((v*25)+o-1)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
-                            cont=cont-1;
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_D){
@@ -118,7 +112,6 @@ public class MyKeyListener implements KeyListener {
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f2.al.get((v*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
                             ((JLabel)f2.al.get((v*25)+o+1)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
-                            cont=cont+1;
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_S){
@@ -126,7 +119,6 @@ public class MyKeyListener implements KeyListener {
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f2.al.get((v*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
                             ((JLabel)f2.al.get(((v+1)*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/taglia erba.jpg"))); // NOI18N  
-                            cont=cont+25;
                         }
                     }
                 }
@@ -199,6 +191,10 @@ public class MyKeyListener implements KeyListener {
         
         if(x.getKeyCode() == KeyEvent.VK_W){
             System.out.println((v-1) + "e" + o);
+            if(v==0){
+                System.out.println("4");
+                return 4;
+            }
             if(l.matrice[v-1][o] == 0){                 //se l'erba è alta
                 l.matrice[v-1][o] = 3;
                 l.matrice[v][o] = 2;
@@ -209,12 +205,20 @@ public class MyKeyListener implements KeyListener {
                 l.matrice[v][o] = 2;
                 return 2;
             }                                         
-             // se c'è un ostacolo
+            // se c'è un ostacolo
+            if(v-1<0 || o<0){
+                System.out.println("4");
+                return 4;
+            }
                 return 1;
         }
         
         if(x.getKeyCode() == KeyEvent.VK_S){
             System.out.println((v+1) + "e" + o);
+            if(v==13){
+                System.out.println("4");
+                return 4;
+            }
             if(l.matrice[v+1][o] == 0){                 //se l'erba è alta
                 l.matrice[v+1][o] = 3;
                 l.matrice[v][o] = 2; 
@@ -226,11 +230,19 @@ public class MyKeyListener implements KeyListener {
                 return 2;
             }
             // se c'è un ostacolo
+            if(v+1<0 || o<0){
+                System.out.println("4");
+                return 4;
+            }
                 return 1;
         }
         
         if(x.getKeyCode() == KeyEvent.VK_A){
             System.out.println(v + "e" + (o-1));
+            if(o==0){
+                System.out.println("4");
+                return 4;
+            }
             if(l.matrice[v][o-1] == 0){                 //se l'erba è alta
                 l.matrice[v][o-1] = 3;
                 l.matrice[v][o] = 2;
@@ -242,11 +254,18 @@ public class MyKeyListener implements KeyListener {
                 return 2;
             }
             // se c'è un ostacolo
+            if(v<0 || o-1<0){
+                System.out.println("4");
+                return 4;
+            }
                 return 1;
         }
         
         if(x.getKeyCode() == KeyEvent.VK_D){
             System.out.println(v + "e" + (o+1));
+            if(o==24){
+                return 4;
+            }
             if(l.matrice[v][o+1] == 0){                 //se l'erba è alta
                 l.matrice[v][o+1] = 3;
                 l.matrice[v][o] = 2;
@@ -258,6 +277,7 @@ public class MyKeyListener implements KeyListener {
                 return 2;
             }
              // se c'è un ostacolo
+
                 return 1;
         }
         
