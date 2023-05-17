@@ -20,9 +20,44 @@ public class MyKeyListener implements KeyListener {
     Livello1 f1;
     livello2 f2;
     Livello3 f3;
-    int cont=256;
     int tagliabile = 0;
     int v=0, o=0;
+    
+    public MyKeyListener(Livello0 f0){
+        this.f0=f0;
+        timer = new Timer(200, new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                    if(x.getKeyCode() == KeyEvent.VK_W){
+                        tagliabile = controllaCasellaLV0(f0);
+                        if(tagliabile == 0 || tagliabile == 2){
+                            ((JLabel)f0.al.get((v*10)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV0-68x68.png"))); 
+                            ((JLabel)f0.al.get(((v-1)*10)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV0-68x68.jpg"))); 
+                        }
+                    }
+                    if(x.getKeyCode() == KeyEvent.VK_A){
+                        tagliabile = controllaCasellaLV0(f0);
+                        if(tagliabile == 0 || tagliabile == 2){
+                            ((JLabel)f0.al.get((v*10)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV0-68x68.png"))); 
+                            ((JLabel)f0.al.get((v*10)+o-1)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV0-68x68.jpg")));  
+                        }
+                    }
+                    if(x.getKeyCode() == KeyEvent.VK_D){
+                        tagliabile = controllaCasellaLV0(f0);
+                        if(tagliabile == 0 || tagliabile == 2){
+                            ((JLabel)f0.al.get((v*10)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV0-68x68.png"))); 
+                            ((JLabel)f0.al.get((v*10)+o+1)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV0-68x68.jpg")));  
+                        }
+                    }
+                    if(x.getKeyCode() == KeyEvent.VK_S){
+                        tagliabile = controllaCasellaLV0(f0);
+                        if(tagliabile == 0 || tagliabile == 2){
+                            ((JLabel)f0.al.get((v*10)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV0-68x68.png"))); 
+                            ((JLabel)f0.al.get(((v+1)*10)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV0-68x68.jpg"))); 
+                        }
+                    }
+            }
+        });
+    }
     /*
     public MyKeyListener(Livello0 f0){
         this.f0=f0;
@@ -57,7 +92,7 @@ public class MyKeyListener implements KeyListener {
             }
         });
     }*/
-    
+    /*
     public MyKeyListener(Livello1 f1){
         this.f1=f1;
         timer = new Timer(300, new ActionListener() {
@@ -86,7 +121,7 @@ public class MyKeyListener implements KeyListener {
                 }
             }
         });
-    }
+    }*/
     
     public MyKeyListener(livello2 f2){
         this.f2=f2;
@@ -181,6 +216,112 @@ public class MyKeyListener implements KeyListener {
     private int controllaCasellaLV2(livello2 l){       //matrice[verticale][orizzontale]
         for(int i=0;i<14;i++){
             for(int j=0;j<25;j++){
+                if(l.matrice[i][j] == 3){
+                    v=i;
+                    o=j;
+                    break;
+                }
+            }
+        }
+        
+        if(x.getKeyCode() == KeyEvent.VK_W){
+            System.out.println((v-1) + "e" + o);
+            if(v==0){
+                System.out.println("4");
+                return 4;
+            }
+            if(l.matrice[v-1][o] == 0){                 //se l'erba è alta
+                l.matrice[v-1][o] = 3;
+                l.matrice[v][o] = 2;
+                return 0;
+            }
+            if(l.matrice[v-1][o] == 2){              //se è bassa
+                l.matrice[v-1][o] = 3;
+                l.matrice[v][o] = 2;
+                return 2;
+            }                                         
+            // se c'è un ostacolo
+            if(v-1<0 || o<0){
+                System.out.println("4");
+                return 4;
+            }
+                return 1;
+        }
+        
+        if(x.getKeyCode() == KeyEvent.VK_S){
+            System.out.println((v+1) + "e" + o);
+            if(v==13){
+                System.out.println("4");
+                return 4;
+            }
+            if(l.matrice[v+1][o] == 0){                 //se l'erba è alta
+                l.matrice[v+1][o] = 3;
+                l.matrice[v][o] = 2; 
+                return 0;
+            }
+            if(l.matrice[v+1][o] == 2){              //se è bassa
+                l.matrice[v+1][o] = 3;
+                l.matrice[v][o] = 2;
+                return 2;
+            }
+            // se c'è un ostacolo
+            if(v+1<0 || o<0){
+                System.out.println("4");
+                return 4;
+            }
+                return 1;
+        }
+        
+        if(x.getKeyCode() == KeyEvent.VK_A){
+            System.out.println(v + "e" + (o-1));
+            if(o==0){
+                System.out.println("4");
+                return 4;
+            }
+            if(l.matrice[v][o-1] == 0){                 //se l'erba è alta
+                l.matrice[v][o-1] = 3;
+                l.matrice[v][o] = 2;
+                return 0;
+            }
+            if(l.matrice[v][o-1] == 2){              //se è bassa
+                l.matrice[v][o-1] = 3;
+                l.matrice[v][o] = 2;
+                return 2;
+            }
+            // se c'è un ostacolo
+            if(v<0 || o-1<0){
+                System.out.println("4");
+                return 4;
+            }
+                return 1;
+        }
+        
+        if(x.getKeyCode() == KeyEvent.VK_D){
+            System.out.println(v + "e" + (o+1));
+            if(o==24){
+                return 4;
+            }
+            if(l.matrice[v][o+1] == 0){                 //se l'erba è alta
+                l.matrice[v][o+1] = 3;
+                l.matrice[v][o] = 2;
+                return 0;
+            }
+            if(l.matrice[v][o+1] == 2){              //se è bassa
+                l.matrice[v][o+1] = 3;
+                l.matrice[v][o] = 2;
+                return 2;
+            }
+             // se c'è un ostacolo
+
+                return 1;
+        }
+        
+        return 1;    
+    }
+    
+    private int controllaCasellaLV0(Livello0 l){       //matrice[verticale][orizzontale]
+        for(int i=0;i<10;i++){
+            for(int j=0;j<18;j++){
                 if(l.matrice[i][j] == 3){
                     v=i;
                     o=j;
