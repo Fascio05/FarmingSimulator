@@ -34,6 +34,10 @@ public class Livello3 extends javax.swing.JFrame {
     
     public Livello3() {
         initComponents();
+        //setSize(960,540); pc piccoli
+        setSize(1248,702); //pc normali
+        setLocationRelativeTo(null); //centrare nello schermo
+        setVisible(true);
     }
 
     /**
@@ -623,9 +627,10 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel576 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         getContentPane().setLayout(new java.awt.GridLayout(18, 32));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV3-40x40.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -709,16 +714,16 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel28);
 
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel29);
 
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel30);
 
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel31);
 
-        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel32);
 
         jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -790,10 +795,10 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel55);
 
-        jLabel56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO FIENO PROG FINALE.png"))); // NOI18N
+        jLabel56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno2LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel56);
 
-        jLabel57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"))); // NOI18N
+        jLabel57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno2LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel57);
 
         jLabel58.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -808,13 +813,13 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel61);
 
-        jLabel62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel62);
 
-        jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/ninfeaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel63);
 
-        jLabel64.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel64.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel64);
 
         jLabel65.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -877,19 +882,19 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel84.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel84);
 
-        jLabel85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel85);
 
-        jLabel86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel86);
 
-        jLabel87.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel87.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel87);
 
-        jLabel88.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO FIENO PROG FINALE.png"))); // NOI18N
+        jLabel88.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno1LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel88);
 
-        jLabel89.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"))); // NOI18N
+        jLabel89.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno1LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel89);
 
         jLabel90.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -907,10 +912,10 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel94);
 
-        jLabel95.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel95.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel95);
 
-        jLabel96.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel96.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel96);
 
         jLabel97.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -970,22 +975,22 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel115.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel115);
 
-        jLabel116.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel116.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel116);
 
-        jLabel117.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel117.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel117);
 
-        jLabel118.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel118.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel118);
 
-        jLabel119.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel119.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel119);
 
-        jLabel120.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel120.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel120);
 
-        jLabel121.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"))); // NOI18N
+        jLabel121.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno1LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel121);
 
         jLabel122.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1006,7 +1011,7 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel127.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel127);
 
-        jLabel128.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel128.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/ninfeaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel128);
 
         jLabel129.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1024,19 +1029,19 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel133.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel133);
 
-        jLabel134.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel134.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel134);
 
-        jLabel135.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel135.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel135);
 
-        jLabel136.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel136.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel136);
 
-        jLabel137.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel137.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel137);
 
-        jLabel138.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel138.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel138);
 
         jLabel139.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1066,19 +1071,19 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel147.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel147);
 
-        jLabel148.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel148.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel148);
 
-        jLabel149.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel149.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel149);
 
-        jLabel150.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel150.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel150);
 
-        jLabel151.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel151.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel151);
 
-        jLabel152.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel152.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel152);
 
         jLabel153.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1102,7 +1107,7 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel159.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel159);
 
-        jLabel160.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel160.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel160);
 
         jLabel161.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1114,34 +1119,34 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel163.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel163);
 
-        jLabel164.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel164.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel164);
 
-        jLabel165.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel165.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel165);
 
-        jLabel166.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel166.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel166);
 
-        jLabel167.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel167.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel167);
 
-        jLabel168.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel168.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel168);
 
-        jLabel169.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/ninfea.png"))); // NOI18N
+        jLabel169.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/ninfeaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel169);
 
-        jLabel170.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel170.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel170);
 
-        jLabel171.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel171.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel171);
 
-        jLabel172.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel172.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel172);
 
-        jLabel173.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel173.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel173);
 
         jLabel174.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1162,19 +1167,19 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel179.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel179);
 
-        jLabel180.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel180.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel180);
 
-        jLabel181.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel181.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel181);
 
-        jLabel182.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel182.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel182);
 
-        jLabel183.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel183.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel183);
 
-        jLabel184.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel184.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel184);
 
         jLabel185.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1198,7 +1203,7 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel191.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel191);
 
-        jLabel192.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel192.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel192);
 
         jLabel193.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1207,40 +1212,40 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel194.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel194);
 
-        jLabel195.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel195.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel195);
 
-        jLabel196.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel196.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/ninfeaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel196);
 
-        jLabel197.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/ninfea.png"))); // NOI18N
+        jLabel197.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel197);
 
-        jLabel198.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel198.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel198);
 
-        jLabel199.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel199.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel199);
 
-        jLabel200.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel200.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel200);
 
-        jLabel201.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel201.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel201);
 
-        jLabel202.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel202.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel202);
 
-        jLabel203.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel203.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel203);
 
-        jLabel204.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel204.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel204);
 
-        jLabel205.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel205.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel205);
 
-        jLabel206.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel206.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel206);
 
         jLabel207.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1261,13 +1266,13 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel212.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel212);
 
-        jLabel213.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel213.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel213);
 
-        jLabel214.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel214.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel214);
 
-        jLabel215.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel215.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel215);
 
         jLabel216.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1303,10 +1308,10 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel226.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel226);
 
-        jLabel227.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel227.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel227);
 
-        jLabel228.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel228.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel228);
 
         jLabel229.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1321,25 +1326,25 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel232.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel232);
 
-        jLabel233.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel233.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel233);
 
-        jLabel234.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel234.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel234);
 
-        jLabel235.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel235.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel235);
 
-        jLabel236.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel236.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel236);
 
-        jLabel237.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/ninfea.png"))); // NOI18N
+        jLabel237.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/ninfeaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel237);
 
-        jLabel238.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel238.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel238);
 
-        jLabel239.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel239.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/ninfeaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel239);
 
         jLabel240.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1399,7 +1404,7 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel258.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel258);
 
-        jLabel259.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel259.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel259);
 
         jLabel260.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1429,16 +1434,16 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel268.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel268);
 
-        jLabel269.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel269.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel269);
 
-        jLabel270.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel270.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel270);
 
-        jLabel271.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel271.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel271);
 
-        jLabel272.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel272.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel272);
 
         jLabel273.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1447,7 +1452,7 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel274.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel274);
 
-        jLabel275.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfire terra png.png"))); // NOI18N
+        jLabel275.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfireTerraLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel275);
 
         jLabel276.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1528,25 +1533,25 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel301.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel301);
 
-        jLabel302.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel302.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel302);
 
-        jLabel303.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel303.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel303);
 
-        jLabel304.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel304.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel304);
 
-        jLabel305.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel305.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel305);
 
-        jLabel306.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/ninfea.png"))); // NOI18N
+        jLabel306.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel306);
 
-        jLabel307.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfire.png"))); // NOI18N
+        jLabel307.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfireLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel307);
 
-        jLabel308.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfire terra png.png"))); // NOI18N
+        jLabel308.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfireLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel308);
 
         jLabel309.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1570,10 +1575,10 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel315.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel315);
 
-        jLabel316.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel316.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel316);
 
-        jLabel317.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel317.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel317);
 
         jLabel318.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1594,10 +1599,10 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel323.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel323);
 
-        jLabel324.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO FIENO PROG FINALE.png"))); // NOI18N
+        jLabel324.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno2LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel324);
 
-        jLabel325.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"))); // NOI18N
+        jLabel325.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno1LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel325);
 
         jLabel326.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1630,28 +1635,28 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel335.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel335);
 
-        jLabel336.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel336.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel336);
 
-        jLabel337.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel337.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel337);
 
-        jLabel338.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel338.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel338);
 
-        jLabel339.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfire.png"))); // NOI18N
+        jLabel339.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfireLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel339);
 
-        jLabel340.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfire.png"))); // NOI18N
+        jLabel340.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfireLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel340);
 
-        jLabel341.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel341.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel341);
 
-        jLabel342.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel342.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel342);
 
-        jLabel343.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel343.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel343);
 
         jLabel344.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1660,16 +1665,16 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel345.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel345);
 
-        jLabel346.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel346.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel346);
 
-        jLabel347.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel347.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel347);
 
-        jLabel348.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel348.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel348);
 
-        jLabel349.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel349.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel349);
 
         jLabel350.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1687,22 +1692,22 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel354.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel354);
 
-        jLabel355.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"))); // NOI18N
+        jLabel355.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno1LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel355);
 
-        jLabel356.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"))); // NOI18N
+        jLabel356.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno2LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel356);
 
-        jLabel357.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel357.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel357);
 
-        jLabel358.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel358.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel358);
 
-        jLabel359.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel359.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel359);
 
-        jLabel360.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel360.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel360);
 
         jLabel361.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1726,43 +1731,43 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel367.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel367);
 
-        jLabel368.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/ninfea.png"))); // NOI18N
+        jLabel368.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel368);
 
-        jLabel369.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel369.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/ninfeaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel369);
 
-        jLabel370.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel370.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel370);
 
-        jLabel371.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfire.png"))); // NOI18N
+        jLabel371.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfireLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel371);
 
-        jLabel372.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfire.png"))); // NOI18N
+        jLabel372.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfireLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel372);
 
-        jLabel373.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel373.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel373);
 
-        jLabel374.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel374.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel374);
 
-        jLabel375.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel375.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/ninfeaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel375);
 
-        jLabel376.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel376.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel376);
 
-        jLabel377.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel377.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel377);
 
-        jLabel378.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel378.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel378);
 
-        jLabel379.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/ninfea.png"))); // NOI18N
+        jLabel379.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/ninfeaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel379);
 
-        jLabel380.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel380.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel380);
 
         jLabel381.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1783,25 +1788,25 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel386.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel386);
 
-        jLabel387.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO FIENO PROG FINALE.png"))); // NOI18N
+        jLabel387.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno1LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel387);
 
-        jLabel388.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel388.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel388);
 
-        jLabel389.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel389.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel389);
 
-        jLabel390.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel390.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel390);
 
-        jLabel391.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel391.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel391);
 
-        jLabel392.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel392.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel392);
 
-        jLabel393.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel393.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel393);
 
         jLabel394.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1828,34 +1833,34 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel401.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel401);
 
-        jLabel402.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel402.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel402);
 
-        jLabel403.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfire.png"))); // NOI18N
+        jLabel403.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfireLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel403);
 
-        jLabel404.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfire.png"))); // NOI18N
+        jLabel404.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfireLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel404);
 
-        jLabel405.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel405.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel405);
 
-        jLabel406.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel406.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel406);
 
-        jLabel407.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel407.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel407);
 
-        jLabel408.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel408.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel408);
 
-        jLabel409.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel409.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel409);
 
-        jLabel410.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel410.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel410);
 
-        jLabel411.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel411.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel411);
 
         jLabel412.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1879,25 +1884,25 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel418.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel418);
 
-        jLabel419.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO FIENO PROG FINALE.png"))); // NOI18N
+        jLabel419.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno2LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel419);
 
-        jLabel420.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel420.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel420);
 
-        jLabel421.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel421.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel421);
 
-        jLabel422.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel422.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel422);
 
-        jLabel423.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel423.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel423);
 
-        jLabel424.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel424.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel424);
 
-        jLabel425.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel425.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel425);
 
         jLabel426.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1927,10 +1932,10 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel434.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel434);
 
-        jLabel435.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfire terra png.png"))); // NOI18N
+        jLabel435.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfireTerraLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel435);
 
-        jLabel436.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfire terra png.png"))); // NOI18N
+        jLabel436.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/campfireTerraLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel436);
 
         jLabel437.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1939,13 +1944,13 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel438.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel438);
 
-        jLabel439.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/ninfea.png"))); // NOI18N
+        jLabel439.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel439);
 
-        jLabel440.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel440.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel440);
 
-        jLabel441.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel441.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel441);
 
         jLabel442.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1978,22 +1983,22 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel451.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel451);
 
-        jLabel452.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel452.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel452);
 
-        jLabel453.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel453.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel453);
 
-        jLabel454.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel454.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel454);
 
-        jLabel455.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel455.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel455);
 
-        jLabel456.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel456.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel456);
 
-        jLabel457.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel457.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel457);
 
         jLabel458.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -2074,22 +2079,22 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel483.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel483);
 
-        jLabel484.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel484.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel484);
 
-        jLabel485.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel485.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel485);
 
-        jLabel486.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel486.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel486);
 
-        jLabel487.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel487.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel487);
 
-        jLabel488.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel488.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel488);
 
-        jLabel489.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel489.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel489);
 
         jLabel490.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -2104,10 +2109,10 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel493.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel493);
 
-        jLabel494.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel494.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel494);
 
-        jLabel495.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel495.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel495);
 
         jLabel496.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -2155,10 +2160,10 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel510.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel510);
 
-        jLabel511.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"))); // NOI18N
+        jLabel511.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno1LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel511);
 
-        jLabel512.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO FIENO PROG FINALE.png"))); // NOI18N
+        jLabel512.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno2LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel512);
 
         jLabel513.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -2173,16 +2178,16 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel516.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel516);
 
-        jLabel517.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel517.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel517);
 
-        jLabel518.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel518.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel518);
 
-        jLabel519.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel519.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel519);
 
-        jLabel520.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/foglia.png"))); // NOI18N
+        jLabel520.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fogliaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel520);
 
         jLabel521.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -2194,13 +2199,13 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel523.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel523);
 
-        jLabel524.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel524.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel524);
 
-        jLabel525.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel525.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/ninfeaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel525);
 
-        jLabel526.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel526.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel526);
 
         jLabel527.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -2248,13 +2253,13 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel541.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel541);
 
-        jLabel542.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"))); // NOI18N
+        jLabel542.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno1LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel542);
 
-        jLabel543.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO FIENO PROG FINALE.png"))); // NOI18N
+        jLabel543.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno2LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel543);
 
-        jLabel544.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO FIENO PROG FINALE.png"))); // NOI18N
+        jLabel544.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno2LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel544);
 
         jLabel545.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -2287,19 +2292,19 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel554.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel554);
 
-        jLabel555.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel555.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel555);
 
-        jLabel556.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel556.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel556);
 
-        jLabel557.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel557.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel557);
 
-        jLabel558.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel558.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel558);
 
-        jLabel559.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acqua.png"))); // NOI18N
+        jLabel559.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/acquaLV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel559);
 
         jLabel560.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -2341,16 +2346,16 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel572.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel572);
 
-        jLabel573.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"))); // NOI18N
+        jLabel573.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno1LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel573);
 
-        jLabel574.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO FIENO PROG FINALE.png"))); // NOI18N
+        jLabel574.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno2LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel574);
 
-        jLabel575.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"))); // NOI18N
+        jLabel575.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno1LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel575);
 
-        jLabel576.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/BLOCCO FIENO PROG FINALE.png"))); // NOI18N
+        jLabel576.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno2LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel576);
 
         setBounds(0, 0, 656, 368);
@@ -2359,37 +2364,7 @@ public class Livello3 extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Livello3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Livello3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Livello3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Livello3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Livello3().setVisible(true);
-            }
-        });
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;

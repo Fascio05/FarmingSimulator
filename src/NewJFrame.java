@@ -109,8 +109,8 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_inserireNicknameActionPerformed
 
     private void avviaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_avviaActionPerformed
-        // TODO add your handling code here:
-        livello2 l = new livello2();
+
+        Livello0 l = new Livello0();
     }//GEN-LAST:event_avviaActionPerformed
 
     /**

@@ -3,6 +3,7 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,112,0,0,2,-112"/>
@@ -32,7 +33,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
+          <Image iconType="3" name="/immagini livelli/tagliaerbaLV3-40x40.jpg"/>
         </Property>
       </Properties>
     </Component>
@@ -228,28 +229,28 @@
     <Component class="javax.swing.JLabel" name="jLabel29">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel30">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel31">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel32">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -417,14 +418,14 @@
     <Component class="javax.swing.JLabel" name="jLabel56">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO FIENO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno2LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel57">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno2LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -459,21 +460,21 @@
     <Component class="javax.swing.JLabel" name="jLabel62">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel63">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/ninfeaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel64">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -620,35 +621,35 @@
     <Component class="javax.swing.JLabel" name="jLabel85">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel86">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel87">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel88">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO FIENO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno1LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel89">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno1LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -690,14 +691,14 @@
     <Component class="javax.swing.JLabel" name="jLabel95">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel96">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -837,42 +838,42 @@
     <Component class="javax.swing.JLabel" name="jLabel116">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel117">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel118">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel119">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel120">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel121">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno1LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -921,7 +922,7 @@
     <Component class="javax.swing.JLabel" name="jLabel128">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/ninfeaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -963,35 +964,35 @@
     <Component class="javax.swing.JLabel" name="jLabel134">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel135">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel136">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel137">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel138">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -1061,35 +1062,35 @@
     <Component class="javax.swing.JLabel" name="jLabel148">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel149">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel150">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel151">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel152">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -1145,7 +1146,7 @@
     <Component class="javax.swing.JLabel" name="jLabel160">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -1173,70 +1174,70 @@
     <Component class="javax.swing.JLabel" name="jLabel164">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel165">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel166">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel167">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel168">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel169">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/ninfea.png"/>
+          <Image iconType="3" name="/immagini livelli/ninfeaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel170">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel171">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel172">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel173">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -1285,35 +1286,35 @@
     <Component class="javax.swing.JLabel" name="jLabel180">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel181">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel182">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel183">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel184">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -1369,7 +1370,7 @@
     <Component class="javax.swing.JLabel" name="jLabel192">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -1390,84 +1391,84 @@
     <Component class="javax.swing.JLabel" name="jLabel195">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel196">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/ninfeaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel197">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/ninfea.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel198">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel199">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel200">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel201">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel202">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel203">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel204">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel205">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel206">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -1516,21 +1517,21 @@
     <Component class="javax.swing.JLabel" name="jLabel213">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel214">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel215">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -1614,14 +1615,14 @@
     <Component class="javax.swing.JLabel" name="jLabel227">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel228">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -1656,49 +1657,49 @@
     <Component class="javax.swing.JLabel" name="jLabel233">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel234">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel235">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel236">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel237">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/ninfea.png"/>
+          <Image iconType="3" name="/immagini livelli/ninfeaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel238">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel239">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/ninfeaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -1838,7 +1839,7 @@
     <Component class="javax.swing.JLabel" name="jLabel259">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -1908,28 +1909,28 @@
     <Component class="javax.swing.JLabel" name="jLabel269">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel270">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel271">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel272">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -1950,7 +1951,7 @@
     <Component class="javax.swing.JLabel" name="jLabel275">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/campfire terra png.png"/>
+          <Image iconType="3" name="/immagini livelli/campfireTerraLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -2139,49 +2140,49 @@
     <Component class="javax.swing.JLabel" name="jLabel302">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel303">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel304">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel305">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel306">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/ninfea.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel307">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/campfire.png"/>
+          <Image iconType="3" name="/immagini livelli/campfireLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel308">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/campfire terra png.png"/>
+          <Image iconType="3" name="/immagini livelli/campfireLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -2237,14 +2238,14 @@
     <Component class="javax.swing.JLabel" name="jLabel316">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel317">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -2293,14 +2294,14 @@
     <Component class="javax.swing.JLabel" name="jLabel324">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO FIENO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno2LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel325">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno1LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -2377,56 +2378,56 @@
     <Component class="javax.swing.JLabel" name="jLabel336">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel337">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel338">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel339">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/campfire.png"/>
+          <Image iconType="3" name="/immagini livelli/campfireLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel340">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/campfire.png"/>
+          <Image iconType="3" name="/immagini livelli/campfireLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel341">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel342">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel343">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -2447,28 +2448,28 @@
     <Component class="javax.swing.JLabel" name="jLabel346">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel347">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel348">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel349">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -2510,42 +2511,42 @@
     <Component class="javax.swing.JLabel" name="jLabel355">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno1LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel356">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno2LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel357">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel358">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel359">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel360">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -2601,91 +2602,91 @@
     <Component class="javax.swing.JLabel" name="jLabel368">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/ninfea.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel369">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/ninfeaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel370">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel371">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/campfire.png"/>
+          <Image iconType="3" name="/immagini livelli/campfireLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel372">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/campfire.png"/>
+          <Image iconType="3" name="/immagini livelli/campfireLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel373">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel374">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel375">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/ninfeaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel376">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel377">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel378">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel379">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/ninfea.png"/>
+          <Image iconType="3" name="/immagini livelli/ninfeaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel380">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -2734,49 +2735,49 @@
     <Component class="javax.swing.JLabel" name="jLabel387">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO FIENO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno1LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel388">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel389">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel390">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel391">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel392">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel393">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -2839,70 +2840,70 @@
     <Component class="javax.swing.JLabel" name="jLabel402">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel403">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/campfire.png"/>
+          <Image iconType="3" name="/immagini livelli/campfireLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel404">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/campfire.png"/>
+          <Image iconType="3" name="/immagini livelli/campfireLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel405">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel406">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel407">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel408">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel409">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel410">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel411">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -2958,49 +2959,49 @@
     <Component class="javax.swing.JLabel" name="jLabel419">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO FIENO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno2LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel420">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel421">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel422">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel423">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel424">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel425">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -3070,14 +3071,14 @@
     <Component class="javax.swing.JLabel" name="jLabel435">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/campfire terra png.png"/>
+          <Image iconType="3" name="/immagini livelli/campfireTerraLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel436">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/campfire terra png.png"/>
+          <Image iconType="3" name="/immagini livelli/campfireTerraLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -3098,21 +3099,21 @@
     <Component class="javax.swing.JLabel" name="jLabel439">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/ninfea.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel440">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel441">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -3189,42 +3190,42 @@
     <Component class="javax.swing.JLabel" name="jLabel452">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel453">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel454">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel455">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel456">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel457">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -3413,42 +3414,42 @@
     <Component class="javax.swing.JLabel" name="jLabel484">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel485">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel486">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel487">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel488">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel489">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -3483,14 +3484,14 @@
     <Component class="javax.swing.JLabel" name="jLabel494">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel495">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -3602,14 +3603,14 @@
     <Component class="javax.swing.JLabel" name="jLabel511">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno1LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel512">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO FIENO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno2LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -3644,28 +3645,28 @@
     <Component class="javax.swing.JLabel" name="jLabel517">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel518">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel519">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel520">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/foglia.png"/>
+          <Image iconType="3" name="/immagini livelli/fogliaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -3693,21 +3694,21 @@
     <Component class="javax.swing.JLabel" name="jLabel524">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel525">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/ninfeaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel526">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -3819,21 +3820,21 @@
     <Component class="javax.swing.JLabel" name="jLabel542">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno1LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel543">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO FIENO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno2LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel544">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO FIENO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno2LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -3910,35 +3911,35 @@
     <Component class="javax.swing.JLabel" name="jLabel555">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel556">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel557">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel558">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel559">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acqua.png"/>
+          <Image iconType="3" name="/immagini livelli/acquaLV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
@@ -4036,28 +4037,28 @@
     <Component class="javax.swing.JLabel" name="jLabel573">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno1LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel574">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO FIENO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno2LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel575">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO GRANO 2 LATO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno1LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel576">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/BLOCCO FIENO PROG FINALE.png"/>
+          <Image iconType="3" name="/immagini livelli/fieno2LV3-40x40.png"/>
         </Property>
       </Properties>
     </Component>
