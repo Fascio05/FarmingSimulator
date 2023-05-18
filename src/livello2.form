@@ -2477,6 +2477,7 @@
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/immagini/cuore pieno 49 x 49 strada.jpg"/>
+          <Image iconType="3" name="/immagini/cuore pieno -strada.jpg"/>
         </Property>
       </Properties>
     </Component>
