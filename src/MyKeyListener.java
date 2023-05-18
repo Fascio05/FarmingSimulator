@@ -33,8 +33,7 @@ public class MyKeyListener implements KeyListener {
                             ((JLabel)f0.al.get((v*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV0-68x68.png"))); 
                             ((JLabel)f0.al.get(((v-1)*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV0-68x68.jpg"))); 
                         }
-                    }
-                    //commeneto per commit 
+                    } 
                     if(x.getKeyCode() == KeyEvent.VK_A){
                         tagliabile = controllaCasellaLV0(f0);
                         if(tagliabile == 0 || tagliabile == 2){
