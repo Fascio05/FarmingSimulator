@@ -2189,7 +2189,7 @@
     <Component class="javax.swing.JLabel" name="jLabel309">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/taglia erba.jpg"/>
+          <Image iconType="3" name="/immagini livelli/tagliaerbaLV2-49x49.jpg"/>
         </Property>
       </Properties>
     </Component>
@@ -2378,7 +2378,7 @@
     <Component class="javax.swing.JLabel" name="jLabel336">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini/strada curva lv2-49x49-alta.jpg"/>
+          <Image iconType="3" name="/immagini/strada curva 49x49 LV2.png"/>
         </Property>
       </Properties>
     </Component>
@@ -2462,21 +2462,21 @@
     <Component class="javax.swing.JLabel" name="jLabel348">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini/cuore pieno 49 x 49.png"/>
+          <Image iconType="3" name="/immagini/cuore pieno 49 x 49 strada.jpg"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel349">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini/cuore pieno 49 x 49.png"/>
+          <Image iconType="3" name="/immagini/cuore pieno 49 x 49 strada.jpg"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel350">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini/cuore pieno 49 x 49.png"/>
+          <Image iconType="3" name="/immagini/cuore pieno 49 x 49 strada.jpg"/>
         </Property>
       </Properties>
     </Component>
