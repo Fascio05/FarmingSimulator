@@ -16,7 +16,7 @@ public class Livello1 extends javax.swing.JFrame {
     ArrayList<JLabel> al = new ArrayList<JLabel>();
     
     int matrice [][]= {
-            {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0},
+            {3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0},
             {0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0},
             {0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0},
             {0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0},
@@ -36,7 +36,7 @@ public class Livello1 extends javax.swing.JFrame {
         setLocationRelativeTo(null); //centrare nello schermo
         setVisible(true);;
         
-        //addKeyListener(new MyKeyListener(this));
+        addKeyListener(new MyKeyListener(this));
         
         al.add(jLabel1);  //memorizzazione mappa nell'arraylist (cella 0 = jlabel1 ecc...)
         al.add(jLabel2);
