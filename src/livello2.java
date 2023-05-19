@@ -19,9 +19,9 @@ import javax.swing.SpringLayout.Constraints;
  */
 public class livello2 extends javax.swing.JFrame {
     
-    AudioInputStream HeyDay;
-    Clip clip;
-
+    AudioInputStream HeyDay, bum;
+    Clip clip, clipBum;
+    
     ArrayList<JLabel> al = new ArrayList<JLabel>();
     int matrice [][]= {
         {1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
