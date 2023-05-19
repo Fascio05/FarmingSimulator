@@ -38,21 +38,21 @@ public class MyKeyListener implements KeyListener {
                         tagliabile = controllaCasellaLV0(f0);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f0.al.get((v*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV0-68x68.png"))); 
-                            ((JLabel)f0.al.get((v*18)-1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV0-68x68.jpg")));  
+                            ((JLabel)f0.al.get((v*18)-1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 68x68 LV0 sinistra.jpg")));  
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_D){
                         tagliabile = controllaCasellaLV0(f0);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f0.al.get((v*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV0-68x68.png"))); 
-                            ((JLabel)f0.al.get((v*18)+1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV0-68x68.jpg")));  
+                            ((JLabel)f0.al.get((v*18)+1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 68x68 LV0 destra.jpg")));  
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_S){
                         tagliabile = controllaCasellaLV0(f0);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f0.al.get((v*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV0-68x68.png"))); 
-                            ((JLabel)f0.al.get(((v+1)*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV0-68x68.jpg"))); 
+                            ((JLabel)f0.al.get(((v+1)*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 68x68 LV0 basso.jpg"))); 
                         }
                     }
             }
@@ -74,21 +74,21 @@ public class MyKeyListener implements KeyListener {
                         tagliabile = controllaCasellaLV1(f1);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f1.al.get((v*21)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV1-58x58.png"))); 
-                            ((JLabel)f1.al.get((v*21)-1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV1-58x58.jpg")));  
+                            ((JLabel)f1.al.get((v*21)-1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 58x58 LV1 sinistra.jpg")));  
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_D){
                         tagliabile = controllaCasellaLV1(f1);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f1.al.get((v*21)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV1-58x58.png"))); 
-                            ((JLabel)f1.al.get((v*21)+1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV1-58x58.jpg")));  
+                            ((JLabel)f1.al.get((v*21)+1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 58x58 LV1 destra.jpg")));  
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_S){
                         tagliabile = controllaCasellaLV1(f1);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f1.al.get((v*21)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV1-58x58.png"))); 
-                            ((JLabel)f1.al.get(((v+1)*21)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV1-58x58.jpg"))); 
+                            ((JLabel)f1.al.get(((v+1)*21)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 58x58 LV1 basso.jpg"))); 
                         }
                     }
             }
@@ -112,21 +112,21 @@ public class MyKeyListener implements KeyListener {
                         tagliabile = controllaCasellaLV2(f2);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f2.al.get((v*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
-                            ((JLabel)f2.al.get((v*25)+o-1)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV2-49x49.jpg"))); // NOI18N  
+                            ((JLabel)f2.al.get((v*25)+o-1)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 49x49 LV2 sinistra.jpg"))); // NOI18N  
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_D){
                         tagliabile = controllaCasellaLV2(f2);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f2.al.get((v*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
-                            ((JLabel)f2.al.get((v*25)+o+1)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV2-49x49.jpg"))); // NOI18N  
+                            ((JLabel)f2.al.get((v*25)+o+1)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 49x49 LV2 desta.jpg"))); // NOI18N  
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_S){
                         tagliabile = controllaCasellaLV2(f2);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f2.al.get((v*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
-                            ((JLabel)f2.al.get(((v+1)*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV2-49x49.jpg"))); // NOI18N  
+                            ((JLabel)f2.al.get(((v+1)*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 49x49 LV2 basso.jpg"))); // NOI18N  
                         }
                     }
                 }
@@ -150,21 +150,21 @@ public class MyKeyListener implements KeyListener {
                         tagliabile = controllaCasellaLV3(f3);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f3.al.get((v*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV3-40x40.png"))); // NOI18N  
-                            ((JLabel)f3.al.get((v*25)+o-1)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV3-40x40.jpg"))); // NOI18N  
+                            ((JLabel)f3.al.get((v*25)+o-1)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 40x40 LV3 sinistra.jpg"))); // NOI18N  
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_D){
                         tagliabile = controllaCasellaLV3(f3);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f3.al.get((v*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV3-40x40.png"))); // NOI18N  
-                            ((JLabel)f3.al.get((v*25)+o+1)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV3-40x40.jpg"))); // NOI18N  
+                            ((JLabel)f3.al.get((v*25)+o+1)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 40x40 LV3 destra.jpg"))); // NOI18N  
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_S){
                         tagliabile = controllaCasellaLV3(f3);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f3.al.get((v*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV3-40x40.png"))); // NOI18N  
-                            ((JLabel)f3.al.get(((v+1)*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV3-40x40.jpg"))); // NOI18N  
+                            ((JLabel)f3.al.get(((v+1)*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 40x40 LV3 basso.jpg"))); // NOI18N  
                         }
                     }
                 }
