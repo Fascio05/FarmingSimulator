@@ -1,5 +1,9 @@
 
+import java.io.File;
 import java.util.*;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.*;
 
 /*
@@ -13,10 +17,9 @@ import javax.swing.*;
  */
 public class Livello0 extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Livello0
-     *
-     */
+    AudioInputStream HeyDay, bum;
+    Clip clip, clipBum;
+    
     ArrayList<JLabel> al = new ArrayList<JLabel>();
     
     int matrice[][] = {{1,1,1,0,0,1,1,1,1,0,0,0,0,0,0,0,1,1},
@@ -36,6 +39,8 @@ public class Livello0 extends javax.swing.JFrame {
         setSize(1248,702); //pc normali
         setLocationRelativeTo(null); //centrare nello schermo
         setVisible(true);
+        
+        playHeyDay();
         
         addKeyListener(new MyKeyListener(this));
         
@@ -218,8 +223,21 @@ public class Livello0 extends javax.swing.JFrame {
         al.add(jLabel177);
         al.add(jLabel178);
         al.add(jLabel179);
-        al.add(jLabel180);
+        al.add(jLabel180);    
     }
+    
+    private void playHeyDay(){
+        try {
+            HeyDay = AudioSystem.getAudioInputStream(new File("src/audio/Hey-Day.wav").getAbsoluteFile());
+            clip = AudioSystem.getClip();
+            clip.open(HeyDay);
+            clip.start();
+            clip.loop(100);
+        } catch(Exception ex) {
+            System.out.println("Error with playing sound.");
+            ex.printStackTrace();
+     }
+     }
 
     /**
      * This method is called from within the constructor to initialize the form.

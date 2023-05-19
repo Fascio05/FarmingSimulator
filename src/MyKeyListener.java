@@ -1,5 +1,7 @@
 
 import java.awt.event.*;
+import java.io.File;
+import javax.sound.sampled.AudioSystem;
 import javax.swing.*;
 
 /*
@@ -22,6 +24,7 @@ public class MyKeyListener implements KeyListener {
     Livello3 f3;
     int tagliabile = 0;
     int v=0, o=0;
+    char collisione = 'n';  //n = no collisione, w = collisione in avanti, ecc...
     
     public MyKeyListener(Livello0 f0){
         this.f0=f0;
@@ -130,6 +133,7 @@ public class MyKeyListener implements KeyListener {
                         }
                     }
                 }
+                controllaFineLV2();
             }
         });
     }
@@ -203,88 +207,131 @@ public class MyKeyListener implements KeyListener {
             }
         }
         
-        if(x.getKeyCode() == KeyEvent.VK_W){
+        if(x.getKeyCode() == KeyEvent.VK_W && collisione != 'w'){
             if(v-1<0){
+                collisione = 'n';
                 return 4;
             }
             if(l.matrice[v-1][o] == 0){                 //se l'erba è alta
+                collisione = 'n';
                 l.matrice[v-1][o] = 3;
                 l.matrice[v][o] = 2;
                 return 0;
             }
             if(l.matrice[v-1][o] == 2){              //se è bassa
+                collisione = 'n';
                 l.matrice[v-1][o] = 3;
                 l.matrice[v][o] = 2;
                 return 2;
             }                                         
             // se c'è un ostacolo
-            if(v-1<0 || o<0){
-                System.out.println("4");
-                return 4;
-            }
+                try {
+                    l.bum = AudioSystem.getAudioInputStream(new File("src/audio/bum.wav").getAbsoluteFile());
+                    l.clipBum = AudioSystem.getClip();
+                    l.clipBum.open(l.bum);
+                    l.clipBum.start();
+                } catch(Exception ex) {
+                    System.out.println("Error with playing sound.");
+                    ex.printStackTrace();
+                }
+                
+                collisione = 'w';
                 return 1;
         }
         
-        if(x.getKeyCode() == KeyEvent.VK_S){
+        if(x.getKeyCode() == KeyEvent.VK_S && collisione != 's'){
             if(v+1>9){
+                collisione = 'n';
                 return 4;
             }
             if(l.matrice[v+1][o] == 0){                 //se l'erba è alta
+                collisione = 'n';
                 l.matrice[v+1][o] = 3;
                 l.matrice[v][o] = 2; 
                 return 0;
             }
             if(l.matrice[v+1][o] == 2){              //se è bassa
+                collisione = 'n';
                 l.matrice[v+1][o] = 3;
                 l.matrice[v][o] = 2;
                 return 2;
             }
             // se c'è un ostacolo
-            if(v+1<0 || o<0){
-                System.out.println("4");
-                return 4;
-            }
+                try {
+                    l.bum = AudioSystem.getAudioInputStream(new File("src/audio/bum.wav").getAbsoluteFile());
+                    l.clipBum = AudioSystem.getClip();
+                    l.clipBum.open(l.bum);
+                    l.clipBum.start();
+                } catch(Exception ex) {
+                    System.out.println("Error with playing sound.");
+                    ex.printStackTrace();
+                }
+                
+                collisione = 'w';
                 return 1;
         }
         
-        if(x.getKeyCode() == KeyEvent.VK_A){
+        if(x.getKeyCode() == KeyEvent.VK_A && collisione != 'a'){
             if(o-1<0){
+                collisione = 'n';
                 return 4;
             }
             if(l.matrice[v][o-1] == 0){                 //se l'erba è alta
+                collisione = 'n';
                 l.matrice[v][o-1] = 3;
                 l.matrice[v][o] = 2;
                 return 0;
             }
             if(l.matrice[v][o-1] == 2){              //se è bassa
+                collisione = 'n';
                 l.matrice[v][o-1] = 3;
                 l.matrice[v][o] = 2;
                 return 2;
             }
             // se c'è un ostacolo
-            if(v<0 || o-1<0){
-                System.out.println("4");
-                return 4;
-            }
+                try {
+                    l.bum = AudioSystem.getAudioInputStream(new File("src/audio/bum.wav").getAbsoluteFile());
+                    l.clipBum = AudioSystem.getClip();
+                    l.clipBum.open(l.bum);
+                    l.clipBum.start();
+                } catch(Exception ex) {
+                    System.out.println("Error with playing sound.");
+                    ex.printStackTrace();
+                }
+                
+                collisione = 'w';
                 return 1;
         }
         
-        if(x.getKeyCode() == KeyEvent.VK_D){
+        if(x.getKeyCode() == KeyEvent.VK_D && collisione != 'd'){
             if(o+1>17){
+                collisione = 'n';
                 return 4;
             }
             if(l.matrice[v][o+1] == 0){                 //se l'erba è alta
+                collisione = 'n';
                 l.matrice[v][o+1] = 3;
                 l.matrice[v][o] = 2;
                 return 0;
             }
             if(l.matrice[v][o+1] == 2){              //se è bassa
+                collisione = 'n';
                 l.matrice[v][o+1] = 3;
                 l.matrice[v][o] = 2;
                 return 2;
             }
              // se c'è un ostacolo
-
+                try {
+                    l.bum = AudioSystem.getAudioInputStream(new File("src/audio/bum.wav").getAbsoluteFile());
+                    l.clipBum = AudioSystem.getClip();
+                    l.clipBum.open(l.bum);
+                    l.clipBum.start();
+                } catch(Exception ex) {
+                    System.out.println("Error with playing sound.");
+                    ex.printStackTrace();
+                }
+                
+                collisione = 'w';
                 return 1;
         }
         
@@ -302,80 +349,131 @@ public class MyKeyListener implements KeyListener {
             }
         }
         
-        if(x.getKeyCode() == KeyEvent.VK_W){
+        if(x.getKeyCode() == KeyEvent.VK_W && collisione != 'w'){
             if(v-1<0){
+                collisione = 'n';
                 return 4;
             }
             if(l.matrice[v-1][o] == 0){                 //se l'erba è alta
+                collisione = 'n';
                 l.matrice[v-1][o] = 3;
                 l.matrice[v][o] = 2;
                 return 0;
             }
             if(l.matrice[v-1][o] == 2){              //se è bassa
+                collisione = 'n';
                 l.matrice[v-1][o] = 3;
                 l.matrice[v][o] = 2;
                 return 2;
             }                                         
             // se c'è un ostacolo
-            if(v-1<0 || o<0){
-                System.out.println("4");
-                return 4;
-            }
+                try {
+                    l.bum = AudioSystem.getAudioInputStream(new File("src/audio/bum.wav").getAbsoluteFile());
+                    l.clipBum = AudioSystem.getClip();
+                    l.clipBum.open(l.bum);
+                    l.clipBum.start();
+                } catch(Exception ex) {
+                    System.out.println("Error with playing sound.");
+                    ex.printStackTrace();
+                }
+                
+                collisione = 'w';
                 return 1;
         }
         
-        if(x.getKeyCode() == KeyEvent.VK_S){
+        if(x.getKeyCode() == KeyEvent.VK_S && collisione != 's'){
             if(v+1>11){
+                collisione = 'n';
                 return 4;
             }
             if(l.matrice[v+1][o] == 0){                 //se l'erba è alta
+                collisione = 'n';
                 l.matrice[v+1][o] = 3;
                 l.matrice[v][o] = 2; 
                 return 0;
             }
             if(l.matrice[v+1][o] == 2){              //se è bassa
+                collisione = 'n';
                 l.matrice[v+1][o] = 3;
                 l.matrice[v][o] = 2;
                 return 2;
             }
             // se c'è un ostacolo
+                try {
+                    l.bum = AudioSystem.getAudioInputStream(new File("src/audio/bum.wav").getAbsoluteFile());
+                    l.clipBum = AudioSystem.getClip();
+                    l.clipBum.open(l.bum);
+                    l.clipBum.start();
+                } catch(Exception ex) {
+                    System.out.println("Error with playing sound.");
+                    ex.printStackTrace();
+                }
+                
+                collisione = 'w';
                 return 1;
         }
         
-        if(x.getKeyCode() == KeyEvent.VK_A){
+        if(x.getKeyCode() == KeyEvent.VK_A && collisione != 'a'){
             if(o-1<0){
+                collisione = 'n';
                 return 4;
             }
             if(l.matrice[v][o-1] == 0){                 //se l'erba è alta
+                collisione = 'n';
                 l.matrice[v][o-1] = 3;
                 l.matrice[v][o] = 2;
                 return 0;
             }
             if(l.matrice[v][o-1] == 2){              //se è bassa
+                collisione = 'n';
                 l.matrice[v][o-1] = 3;
                 l.matrice[v][o] = 2;
                 return 2;
             }
             // se c'è un ostacolo
+                try {
+                    l.bum = AudioSystem.getAudioInputStream(new File("src/audio/bum.wav").getAbsoluteFile());
+                    l.clipBum = AudioSystem.getClip();
+                    l.clipBum.open(l.bum);
+                    l.clipBum.start();
+                } catch(Exception ex) {
+                    System.out.println("Error with playing sound.");
+                    ex.printStackTrace();
+                }
+                
+                collisione = 'w';
                 return 1;
         }
         
-        if(x.getKeyCode() == KeyEvent.VK_D){
+        if(x.getKeyCode() == KeyEvent.VK_D && collisione != 'd'){
             if(o+1>20){
+                collisione = 'n';
                 return 4;
             }
             if(l.matrice[v][o+1] == 0){                 //se l'erba è alta
+                collisione = 'n';
                 l.matrice[v][o+1] = 3;
                 l.matrice[v][o] = 2;
                 return 0;
             }
             if(l.matrice[v][o+1] == 2){              //se è bassa
+                collisione = 'n';
                 l.matrice[v][o+1] = 3;
                 l.matrice[v][o] = 2;
                 return 2;
             }
              // se c'è un ostacolo
-
+                try {
+                    l.bum = AudioSystem.getAudioInputStream(new File("src/audio/bum.wav").getAbsoluteFile());
+                    l.clipBum = AudioSystem.getClip();
+                    l.clipBum.open(l.bum);
+                    l.clipBum.start();
+                } catch(Exception ex) {
+                    System.out.println("Error with playing sound.");
+                    ex.printStackTrace();
+                }
+                
+                collisione = 'w';
                 return 1;
         }
         
@@ -393,76 +491,131 @@ public class MyKeyListener implements KeyListener {
             }
         }
         
-        if(x.getKeyCode() == KeyEvent.VK_W){
+        if(x.getKeyCode() == KeyEvent.VK_W && collisione != 'w'){
             if(v-1<0){
+                collisione = 'n';
                 return 4;
             }
             if(l.matrice[v-1][o] == 0){                 //se l'erba è alta
+                collisione = 'n';
                 l.matrice[v-1][o] = 3;
                 l.matrice[v][o] = 2;
                 return 0;
             }
             if(l.matrice[v-1][o] == 2){              //se è bassa
+                collisione = 'n';
                 l.matrice[v-1][o] = 3;
                 l.matrice[v][o] = 2;
                 return 2;
             }                                         
             // se c'è un ostacolo
+                try {
+                    l.bum = AudioSystem.getAudioInputStream(new File("src/audio/bum.wav").getAbsoluteFile());
+                    l.clipBum = AudioSystem.getClip();
+                    l.clipBum.open(l.bum);
+                    l.clipBum.start();
+                } catch(Exception ex) {
+                    System.out.println("Error with playing sound.");
+                    ex.printStackTrace();
+                }
+                
+                collisione = 'w';
                 return 1;
         }
         
-        if(x.getKeyCode() == KeyEvent.VK_S){
+        if(x.getKeyCode() == KeyEvent.VK_S && collisione != 's'){
             if(v+1>13){
+                collisione = 'n';
                 return 4;
             }
             if(l.matrice[v+1][o] == 0){                 //se l'erba è alta
+                collisione = 'n';
                 l.matrice[v+1][o] = 3;
                 l.matrice[v][o] = 2; 
                 return 0;
             }
             if(l.matrice[v+1][o] == 2){              //se è bassa
+                collisione = 'n';
                 l.matrice[v+1][o] = 3;
                 l.matrice[v][o] = 2;
                 return 2;
             }
             // se c'è un ostacolo
+                try {
+                    l.bum = AudioSystem.getAudioInputStream(new File("src/audio/bum.wav").getAbsoluteFile());
+                    l.clipBum = AudioSystem.getClip();
+                    l.clipBum.open(l.bum);
+                    l.clipBum.start();
+                } catch(Exception ex) {
+                    System.out.println("Error with playing sound.");
+                    ex.printStackTrace();
+                }
+                
+                collisione = 's';
                 return 1;
         }
         
-        if(x.getKeyCode() == KeyEvent.VK_A){
+        if(x.getKeyCode() == KeyEvent.VK_A && collisione != 'a'){
             if(o-1<0){
+                collisione = 'n';
                 return 4;
             }
             if(l.matrice[v][o-1] == 0){                 //se l'erba è alta
+                collisione = 'n';
                 l.matrice[v][o-1] = 3;
                 l.matrice[v][o] = 2;
                 return 0;
             }
             if(l.matrice[v][o-1] == 2){              //se è bassa
+                collisione = 'n';
                 l.matrice[v][o-1] = 3;
                 l.matrice[v][o] = 2;
                 return 2;
             }
             // se c'è un ostacolo
+                try {
+                    l.bum = AudioSystem.getAudioInputStream(new File("src/audio/bum.wav").getAbsoluteFile());
+                    l.clipBum = AudioSystem.getClip();
+                    l.clipBum.open(l.bum);
+                    l.clipBum.start();
+                } catch(Exception ex) {
+                    System.out.println("Error with playing sound.");
+                    ex.printStackTrace();
+                }
+                
+                collisione = 'a';
                 return 1;
         }
         
-        if(x.getKeyCode() == KeyEvent.VK_D){
+        if(x.getKeyCode() == KeyEvent.VK_D && collisione != 'd'){
             if(o+1>24){
+                collisione = 'n';
                 return 4;
             }
             if(l.matrice[v][o+1] == 0){                 //se l'erba è alta
+                collisione = 'n';
                 l.matrice[v][o+1] = 3;
                 l.matrice[v][o] = 2;
                 return 0;
             }
             if(l.matrice[v][o+1] == 2){              //se è bassa
+                collisione = 'n';
                 l.matrice[v][o+1] = 3;
                 l.matrice[v][o] = 2;
                 return 2;
             }
              // se c'è un ostacolo
-
+                try {
+                    l.bum = AudioSystem.getAudioInputStream(new File("src/audio/bum.wav").getAbsoluteFile());
+                    l.clipBum = AudioSystem.getClip();
+                    l.clipBum.open(l.bum);
+                    l.clipBum.start();
+                } catch(Exception ex) {
+                    System.out.println("Error with playing sound.");
+                    ex.printStackTrace();
+                }
+                
+                collisione = 'd';
                 return 1;
         }
         
@@ -480,86 +633,177 @@ public class MyKeyListener implements KeyListener {
             }
         }
         
-        if(x.getKeyCode() == KeyEvent.VK_W){
+        if(x.getKeyCode() == KeyEvent.VK_W && collisione != 'w'){
             if(v-1<0){
+                collisione = 'n';
                 return 4;
             }
             if(l.matrice[v-1][o] == 0){                 //se l'erba è alta
+                collisione = 'n';
                 l.matrice[v-1][o] = 3;
                 l.matrice[v][o] = 2;
                 return 0;
             }
             if(l.matrice[v-1][o] == 2){              //se è bassa
+                collisione = 'n';
                 l.matrice[v-1][o] = 3;
                 l.matrice[v][o] = 2;
                 return 2;
             }                                         
             // se c'è un ostacolo
+                try {
+                    l.bum = AudioSystem.getAudioInputStream(new File("src/audio/bum.wav").getAbsoluteFile());
+                    l.clipBum = AudioSystem.getClip();
+                    l.clipBum.open(l.bum);
+                    l.clipBum.start();
+                } catch(Exception ex) {
+                    System.out.println("Error with playing sound.");
+                    ex.printStackTrace();
+                }
+                
+                collisione = 'd';
                 return 1;
         }
         
-        if(x.getKeyCode() == KeyEvent.VK_S){
+        if(x.getKeyCode() == KeyEvent.VK_S && collisione != 's'){
             if(v+1>17){
+                collisione = 'n';
                 return 4;
             }
             if(l.matrice[v+1][o] == 0){                 //se l'erba è alta
+                collisione = 'n';
                 l.matrice[v+1][o] = 3;
                 l.matrice[v][o] = 2; 
                 return 0;
             }
             if(l.matrice[v+1][o] == 2){              //se è bassa
+                collisione = 'n';
                 l.matrice[v+1][o] = 3;
                 l.matrice[v][o] = 2;
                 return 2;
             }
             // se c'è un ostacolo
+                try {
+                    l.bum = AudioSystem.getAudioInputStream(new File("src/audio/bum.wav").getAbsoluteFile());
+                    l.clipBum = AudioSystem.getClip();
+                    l.clipBum.open(l.bum);
+                    l.clipBum.start();
+                } catch(Exception ex) {
+                    System.out.println("Error with playing sound.");
+                    ex.printStackTrace();
+                }
+                
+                collisione = 'd';
                 return 1;
         }
         
-        if(x.getKeyCode() == KeyEvent.VK_A){
+        if(x.getKeyCode() == KeyEvent.VK_A && collisione != 'a'){
             if(o-1<0){
+                collisione = 'n';
                 return 4;
             }
             if(l.matrice[v][o-1] == 0){                 //se l'erba è alta
+                collisione = 'n';
                 l.matrice[v][o-1] = 3;
                 l.matrice[v][o] = 2;
                 return 0;
             }
             if(l.matrice[v][o-1] == 2){              //se è bassa
+                collisione = 'n';
                 l.matrice[v][o-1] = 3;
                 l.matrice[v][o] = 2;
                 return 2;
             }
             // se c'è un ostacolo
-            if(v<0 || o-1<0){
-                System.out.println("4");
-                return 4;
-            }
+                try {
+                    l.bum = AudioSystem.getAudioInputStream(new File("src/audio/bum.wav").getAbsoluteFile());
+                    l.clipBum = AudioSystem.getClip();
+                    l.clipBum.open(l.bum);
+                    l.clipBum.start();
+                } catch(Exception ex) {
+                    System.out.println("Error with playing sound.");
+                    ex.printStackTrace();
+                }
+                
+                collisione = 'd';
                 return 1;
         }
         
-        if(x.getKeyCode() == KeyEvent.VK_D){
+        if(x.getKeyCode() == KeyEvent.VK_D && collisione != 'd'){
             if(o+1>31){
+                collisione = 'n';
                 return 4;
             }
             if(l.matrice[v][o+1] == 0){                 //se l'erba è alta
+                collisione = 'n';
                 l.matrice[v][o+1] = 3;
                 l.matrice[v][o] = 2;
                 return 0;
             }
             if(l.matrice[v][o+1] == 2){              //se è bassa
+                collisione = 'n';
                 l.matrice[v][o+1] = 3;
                 l.matrice[v][o] = 2;
                 return 2;
             }
              // se c'è un ostacolo
-
+                try {
+                    l.bum = AudioSystem.getAudioInputStream(new File("src/audio/bum.wav").getAbsoluteFile());
+                    l.clipBum = AudioSystem.getClip();
+                    l.clipBum.open(l.bum);
+                    l.clipBum.start();
+                } catch(Exception ex) {
+                    System.out.println("Error with playing sound.");
+                    ex.printStackTrace();
+                }
+                
+                collisione = 'd';
                 return 1;
         }
         
         return 1;    
     }
     
+    private void controllaFineLV0(){
+        for(int i=0;i<10;i++){
+            for(int j=0;j<18;j++){
+                if(f2.matrice[i][j] == 0){
+                    return;
+                }
+            }
+        }
+        f0.clip.stop();
+    }
+    private void controllaFineLV1(){
+        for(int i=0;i<12;i++){
+            for(int j=0;j<21;j++){
+                if(f2.matrice[i][j] == 0){
+                    return;
+                }
+            }
+        }
+        f1.clip.stop();
+    }
+    private void controllaFineLV2(){
+        for(int i=0;i<14;i++){
+            for(int j=0;j<25;j++){
+                if(f2.matrice[i][j] == 0){
+                    return;
+                }
+            }
+        }
+        f2.clip.stop();
+    }
+    private void controllaFineLV3(){
+        for(int i=0;i<18;i++){
+            for(int j=0;j<32;j++){
+                if(f2.matrice[i][j] == 0){
+                    return;
+                }
+            }
+        }
+        f3.clip.stop();
+    }
     
     
     
