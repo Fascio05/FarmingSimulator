@@ -1,7 +1,11 @@
 
 import java.awt.event.*;
 import java.io.File;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.*;
 
 /*
@@ -16,7 +20,7 @@ import javax.swing.*;
 public class MyKeyListener implements KeyListener {
 
     private Timer timer;
-    int lvCorrente = 2;
+    int lvCorrente = 0;
     KeyEvent x;
     Livello0 f0;
     Livello1 f1;
@@ -25,9 +29,13 @@ public class MyKeyListener implements KeyListener {
     int tagliabile = 0;
     int v=0, o=0;
     char collisione = 'n';  //n = no collisione, w = collisione in avanti, ecc...
+    AudioInputStream tosaerba;
+    Clip clipTosaerba;
+    boolean tosaerbaOn = false;
     
     public MyKeyListener(Livello0 f0){
         this.f0=f0;
+        lvCorrente = 0;
         timer = new Timer(170, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                     if(x.getKeyCode() == KeyEvent.VK_W){
@@ -58,12 +66,14 @@ public class MyKeyListener implements KeyListener {
                             ((JLabel)f0.al.get(((v+1)*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 68x68 LV0 basso.jpg"))); 
                         }
                     }
+                    controllaFineLV0();
             }
         });
     }
     
     public MyKeyListener(Livello1 f1){
         this.f1=f1;
+        lvCorrente = 1;
         timer = new Timer(170, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                     if(x.getKeyCode() == KeyEvent.VK_W){
@@ -94,6 +104,7 @@ public class MyKeyListener implements KeyListener {
                             ((JLabel)f1.al.get(((v+1)*21)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 58x58 LV1 basso.jpg"))); 
                         }
                     }
+                    controllaFineLV1();
             }
         });
     }
@@ -101,9 +112,9 @@ public class MyKeyListener implements KeyListener {
     
     public MyKeyListener(livello2 f2){
         this.f2=f2;
+        lvCorrente = 2;
         timer = new Timer(170, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                if(lvCorrente == 2){
                     if(x.getKeyCode() == KeyEvent.VK_W){
                         tagliabile = controllaCasellaLV2(f2);
                         if(tagliabile == 0 || tagliabile == 2){
@@ -132,7 +143,6 @@ public class MyKeyListener implements KeyListener {
                             ((JLabel)f2.al.get(((v+1)*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 49x49 LV2 basso.jpg"))); // NOI18N  
                         }
                     }
-                }
                 controllaFineLV2();
             }
         });
@@ -140,38 +150,38 @@ public class MyKeyListener implements KeyListener {
     
     public MyKeyListener(Livello3 f3){
         this.f3=f3;
+        lvCorrente = 3;
         timer = new Timer(170, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                if(lvCorrente == 2){
                     if(x.getKeyCode() == KeyEvent.VK_W){
                         tagliabile = controllaCasellaLV3(f3);
                         if(tagliabile == 0 || tagliabile == 2){
-                            ((JLabel)f3.al.get((v*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV3-40x40.png"))); // NOI18N  
-                            ((JLabel)f3.al.get(((v-1)*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV3-40x40.jpg"))); // NOI18N  
+                            ((JLabel)f3.al.get((v*32)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV3-40x40.png"))); // NOI18N  
+                            ((JLabel)f3.al.get(((v-1)*32)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV3-40x40.jpg"))); // NOI18N  
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_A){
                         tagliabile = controllaCasellaLV3(f3);
                         if(tagliabile == 0 || tagliabile == 2){
-                            ((JLabel)f3.al.get((v*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV3-40x40.png"))); // NOI18N  
-                            ((JLabel)f3.al.get((v*25)+o-1)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 40x40 LV3 sinistra.jpg"))); // NOI18N  
+                            ((JLabel)f3.al.get((v*32)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV3-40x40.png"))); // NOI18N  
+                            ((JLabel)f3.al.get((v*32)+o-1)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 40x40 LV3 sinistra.jpg"))); // NOI18N  
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_D){
                         tagliabile = controllaCasellaLV3(f3);
                         if(tagliabile == 0 || tagliabile == 2){
-                            ((JLabel)f3.al.get((v*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV3-40x40.png"))); // NOI18N  
-                            ((JLabel)f3.al.get((v*25)+o+1)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 40x40 LV3 destra.jpg"))); // NOI18N  
+                            ((JLabel)f3.al.get((v*32)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV3-40x40.png"))); // NOI18N  
+                            ((JLabel)f3.al.get((v*32)+o+1)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 40x40 LV3 destra.jpg"))); // NOI18N  
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_S){
                         tagliabile = controllaCasellaLV3(f3);
                         if(tagliabile == 0 || tagliabile == 2){
-                            ((JLabel)f3.al.get((v*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV3-40x40.png"))); // NOI18N  
-                            ((JLabel)f3.al.get(((v+1)*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 40x40 LV3 basso.jpg"))); // NOI18N  
+                            ((JLabel)f3.al.get((v*32)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV3-40x40.png"))); // NOI18N  
+                            ((JLabel)f3.al.get(((v+1)*32)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 40x40 LV3 basso.jpg"))); // NOI18N  
                         }
                     }
-                }
+                    controllaFineLV3();
             }
         });
     }
@@ -187,12 +197,306 @@ public class MyKeyListener implements KeyListener {
     public void keyPressed(KeyEvent e) {
         x = e;
         timer.start();
-                
+        if(lvCorrente == 0){
+        if(x.getKeyCode() == KeyEvent.VK_W || x.getKeyCode() == KeyEvent.VK_S || x.getKeyCode() == KeyEvent.VK_A || x.getKeyCode() == KeyEvent.VK_D){
+            for(int i=0;i<10;i++){
+            for(int j=0;j<18;j++){
+                if(f0.matrice[i][j] == 3){
+                    v=i;
+                    o=j;
+                    break;
+                }
+            }
+            }
+            if(tosaerbaOn == false){
+                if(v!=0){
+                if(x.getKeyCode() == KeyEvent.VK_W && f0.matrice[v-1][o] == 0){
+                    suonoTosaerba();
+                    clipTosaerba.start();
+                    tosaerbaOn = true;
+                }
+                }
+                if(v!=9){
+                if(x.getKeyCode() == KeyEvent.VK_S && f0.matrice[v+1][o] == 0){
+                    suonoTosaerba();
+                    clipTosaerba.start();
+                    tosaerbaOn = true;
+                }
+                }
+                if(o!=0){
+                if(x.getKeyCode() == KeyEvent.VK_A && f0.matrice[v][o-1] == 0){
+                    suonoTosaerba();
+                    clipTosaerba.start();
+                    tosaerbaOn = true;
+                }
+                }
+                if(o!=17){
+                if(x.getKeyCode() == KeyEvent.VK_D && f0.matrice[v][o+1] == 0){
+                    suonoTosaerba();
+                    clipTosaerba.start();
+                    tosaerbaOn = true;
+                }
+                }
+            }
+            if(tosaerbaOn == true){
+                if(v!=0){
+                if(x.getKeyCode() == KeyEvent.VK_W && f0.matrice[v-1][o] != 0){
+                    clipTosaerba.stop();
+                    clipTosaerba.close();
+                    tosaerbaOn = false;
+                }
+                }
+                if(v!=9){
+                if(x.getKeyCode() == KeyEvent.VK_S && f0.matrice[v+1][o] != 0){
+                    clipTosaerba.stop();
+                    clipTosaerba.close();
+                    tosaerbaOn = false;
+                }
+                }
+                if(o!=0){
+                if(x.getKeyCode() == KeyEvent.VK_A && f0.matrice[v][o-1] != 0){
+                    clipTosaerba.stop();
+                    clipTosaerba.close();
+                    tosaerbaOn = false;
+                }
+                }
+                if(o!=17){
+                if(x.getKeyCode() == KeyEvent.VK_D && f0.matrice[v][o+1] != 0){
+                    clipTosaerba.stop();
+                    clipTosaerba.close();
+                    tosaerbaOn = false;
+                }
+            }
+        }
+        }
+        }
+        if(lvCorrente == 1){
+        if(x.getKeyCode() == KeyEvent.VK_W || x.getKeyCode() == KeyEvent.VK_S || x.getKeyCode() == KeyEvent.VK_A || x.getKeyCode() == KeyEvent.VK_D){
+            for(int i=0;i<12;i++){
+            for(int j=0;j<21;j++){
+                if(f1.matrice[i][j] == 3){
+                    v=i;
+                    o=j;
+                    break;
+                }
+            }
+            }
+            if(tosaerbaOn == false){
+                if(v!=0){
+                if(x.getKeyCode() == KeyEvent.VK_W && f1.matrice[v-1][o] == 0){
+                    suonoTosaerba();
+                    clipTosaerba.start();
+                    tosaerbaOn = true;
+                }
+                }
+                if(v!=11){
+                if(x.getKeyCode() == KeyEvent.VK_S && f1.matrice[v+1][o] == 0){
+                    suonoTosaerba();
+                    clipTosaerba.start();
+                    tosaerbaOn = true;
+                }
+                }
+                if(o!=0){
+                if(x.getKeyCode() == KeyEvent.VK_A && f1.matrice[v][o-1] == 0){
+                    suonoTosaerba();
+                    clipTosaerba.start();
+                    tosaerbaOn = true;
+                }
+                }
+                if(o!=20){
+                if(x.getKeyCode() == KeyEvent.VK_D && f1.matrice[v][o+1] == 0){
+                    suonoTosaerba();
+                    clipTosaerba.start();
+                    tosaerbaOn = true;
+                }
+                }
+            }
+            if(tosaerbaOn == true){
+                if(v!=0){
+                if(x.getKeyCode() == KeyEvent.VK_W && f1.matrice[v-1][o] != 0){
+                    clipTosaerba.stop();
+                    clipTosaerba.close();
+                    tosaerbaOn = false;
+                }
+                }
+                if(v!=11){
+                if(x.getKeyCode() == KeyEvent.VK_S && f1.matrice[v+1][o] != 0){
+                    clipTosaerba.stop();
+                    clipTosaerba.close();
+                    tosaerbaOn = false;
+                }
+                }
+                if(o!=0){
+                if(x.getKeyCode() == KeyEvent.VK_A && f1.matrice[v][o-1] != 0){
+                    clipTosaerba.stop();
+                    clipTosaerba.close();
+                    tosaerbaOn = false;
+                }
+                }
+                if(o!=20){
+                if(x.getKeyCode() == KeyEvent.VK_D && f1.matrice[v][o+1] != 0){
+                    clipTosaerba.stop();
+                    clipTosaerba.close();
+                    tosaerbaOn = false;
+                }
+            }
+        }
+        }
+        }
+        if(lvCorrente == 2){
+        if(x.getKeyCode() == KeyEvent.VK_W || x.getKeyCode() == KeyEvent.VK_S || x.getKeyCode() == KeyEvent.VK_A || x.getKeyCode() == KeyEvent.VK_D){
+            for(int i=0;i<14;i++){
+            for(int j=0;j<25;j++){
+                if(f2.matrice[i][j] == 3){
+                    v=i;
+                    o=j;
+                    break;
+                }
+            }
+            }
+            if(tosaerbaOn == false){
+                if(v!=0){
+                if(x.getKeyCode() == KeyEvent.VK_W && f2.matrice[v-1][o] == 0){
+                    suonoTosaerba();
+                    clipTosaerba.start();
+                    tosaerbaOn = true;
+                }
+                }
+                if(v!=13){
+                if(x.getKeyCode() == KeyEvent.VK_S && f2.matrice[v+1][o] == 0){
+                    suonoTosaerba();
+                    clipTosaerba.start();
+                    tosaerbaOn = true;
+                }
+                }
+                if(o!=0){
+                if(x.getKeyCode() == KeyEvent.VK_A && f2.matrice[v][o-1] == 0){
+                    suonoTosaerba();
+                    clipTosaerba.start();
+                    tosaerbaOn = true;
+                }
+                }
+                if(o!=24){
+                if(x.getKeyCode() == KeyEvent.VK_D && f2.matrice[v][o+1] == 0){
+                    suonoTosaerba();
+                    clipTosaerba.start();
+                    tosaerbaOn = true;
+                }
+                }
+            }
+            if(tosaerbaOn == true){
+                if(v!=0){
+                if(x.getKeyCode() == KeyEvent.VK_W && f2.matrice[v-1][o] != 0){
+                    clipTosaerba.stop();
+                    clipTosaerba.close();
+                    tosaerbaOn = false;
+                }
+                }
+                if(v!=13){
+                if(x.getKeyCode() == KeyEvent.VK_S && f2.matrice[v+1][o] != 0){
+                    clipTosaerba.stop();
+                    clipTosaerba.close();
+                    tosaerbaOn = false;
+                }
+                }
+                if(o!=0){
+                if(x.getKeyCode() == KeyEvent.VK_A && f2.matrice[v][o-1] != 0){
+                    clipTosaerba.stop();
+                    clipTosaerba.close();
+                    tosaerbaOn = false;
+                }
+                }
+                if(o!=24){
+                if(x.getKeyCode() == KeyEvent.VK_D && f2.matrice[v][o+1] != 0){
+                    clipTosaerba.stop();
+                    clipTosaerba.close();
+                    tosaerbaOn = false;
+                }
+            }
+        }
+        }
+        }
+        if(lvCorrente == 3){
+        if(x.getKeyCode() == KeyEvent.VK_W || x.getKeyCode() == KeyEvent.VK_S || x.getKeyCode() == KeyEvent.VK_A || x.getKeyCode() == KeyEvent.VK_D){
+            for(int i=0;i<18;i++){
+            for(int j=0;j<32;j++){
+                if(f3.matrice[i][j] == 3){
+                    v=i;
+                    o=j;
+                    break;
+                }
+            }
+            }
+            if(tosaerbaOn == false){
+                if(v!=0){
+                if(x.getKeyCode() == KeyEvent.VK_W && f3.matrice[v-1][o] == 0){
+                    suonoTosaerba();
+                    clipTosaerba.start();
+                    tosaerbaOn = true;
+                }
+                }
+                if(v!=17){
+                if(x.getKeyCode() == KeyEvent.VK_S && f3.matrice[v+1][o] == 0){
+                    suonoTosaerba();
+                    clipTosaerba.start();
+                    tosaerbaOn = true;
+                }
+                }
+                if(o!=0){
+                if(x.getKeyCode() == KeyEvent.VK_A && f3.matrice[v][o-1] == 0){
+                    suonoTosaerba();
+                    clipTosaerba.start();
+                    tosaerbaOn = true;
+                }
+                }
+                if(o!=31){
+                if(x.getKeyCode() == KeyEvent.VK_D && f3.matrice[v][o+1] == 0){
+                    suonoTosaerba();
+                    clipTosaerba.start();
+                    tosaerbaOn = true;
+                }
+                }
+            }
+            if(tosaerbaOn == true){
+                if(v!=0){
+                if(x.getKeyCode() == KeyEvent.VK_W && f3.matrice[v-1][o] != 0){
+                    clipTosaerba.stop();
+                    clipTosaerba.close();
+                    tosaerbaOn = false;
+                }
+                }
+                if(v!=17){
+                if(x.getKeyCode() == KeyEvent.VK_S && f3.matrice[v+1][o] != 0){
+                    clipTosaerba.stop();
+                    clipTosaerba.close();
+                    tosaerbaOn = false;
+                }
+                }
+                if(o!=0){
+                if(x.getKeyCode() == KeyEvent.VK_A && f3.matrice[v][o-1] != 0){
+                    clipTosaerba.stop();
+                    clipTosaerba.close();
+                    tosaerbaOn = false;
+                }
+                }
+                if(o!=31){
+                if(x.getKeyCode() == KeyEvent.VK_D && f3.matrice[v][o+1] != 0){
+                    clipTosaerba.stop();
+                    clipTosaerba.close();
+                    tosaerbaOn = false;
+                }
+            }
+        }
+        }
+        }
     }
     
     @Override
     public void keyReleased(KeyEvent e) {
         timer.stop();
+        clipTosaerba.stop();
+        clipTosaerba.close();
+        tosaerbaOn = false;
     }
     
     
@@ -267,7 +571,7 @@ public class MyKeyListener implements KeyListener {
                     ex.printStackTrace();
                 }
                 
-                collisione = 'w';
+                collisione = 's';
                 return 1;
         }
         
@@ -299,7 +603,7 @@ public class MyKeyListener implements KeyListener {
                     ex.printStackTrace();
                 }
                 
-                collisione = 'w';
+                collisione = 'a';
                 return 1;
         }
         
@@ -331,7 +635,7 @@ public class MyKeyListener implements KeyListener {
                     ex.printStackTrace();
                 }
                 
-                collisione = 'w';
+                collisione = 'd';
                 return 1;
         }
         
@@ -409,7 +713,7 @@ public class MyKeyListener implements KeyListener {
                     ex.printStackTrace();
                 }
                 
-                collisione = 'w';
+                collisione = 's';
                 return 1;
         }
         
@@ -441,7 +745,7 @@ public class MyKeyListener implements KeyListener {
                     ex.printStackTrace();
                 }
                 
-                collisione = 'w';
+                collisione = 'a';
                 return 1;
         }
         
@@ -473,7 +777,7 @@ public class MyKeyListener implements KeyListener {
                     ex.printStackTrace();
                 }
                 
-                collisione = 'w';
+                collisione = 'd';
                 return 1;
         }
         
@@ -633,6 +937,8 @@ public class MyKeyListener implements KeyListener {
             }
         }
         
+        System.out.println(""+v+"    "+o);
+        
         if(x.getKeyCode() == KeyEvent.VK_W && collisione != 'w'){
             if(v-1<0){
                 collisione = 'n';
@@ -661,7 +967,7 @@ public class MyKeyListener implements KeyListener {
                     ex.printStackTrace();
                 }
                 
-                collisione = 'd';
+                collisione = 'w';
                 return 1;
         }
         
@@ -693,7 +999,7 @@ public class MyKeyListener implements KeyListener {
                     ex.printStackTrace();
                 }
                 
-                collisione = 'd';
+                collisione = 's';
                 return 1;
         }
         
@@ -725,7 +1031,7 @@ public class MyKeyListener implements KeyListener {
                     ex.printStackTrace();
                 }
                 
-                collisione = 'd';
+                collisione = 'a';
                 return 1;
         }
         
@@ -767,7 +1073,7 @@ public class MyKeyListener implements KeyListener {
     private void controllaFineLV0(){
         for(int i=0;i<10;i++){
             for(int j=0;j<18;j++){
-                if(f2.matrice[i][j] == 0){
+                if(f0.matrice[i][j] == 0){
                     return;
                 }
             }
@@ -777,7 +1083,7 @@ public class MyKeyListener implements KeyListener {
     private void controllaFineLV1(){
         for(int i=0;i<12;i++){
             for(int j=0;j<21;j++){
-                if(f2.matrice[i][j] == 0){
+                if(f1.matrice[i][j] == 0){
                     return;
                 }
             }
@@ -797,12 +1103,23 @@ public class MyKeyListener implements KeyListener {
     private void controllaFineLV3(){
         for(int i=0;i<18;i++){
             for(int j=0;j<32;j++){
-                if(f2.matrice[i][j] == 0){
+                if(f3.matrice[i][j] == 0){
                     return;
                 }
             }
         }
         f3.clip.stop();
+    }
+    
+    private void suonoTosaerba(){
+        try {
+            tosaerba = AudioSystem.getAudioInputStream(new File("src/audio/tosaerba.wav").getAbsoluteFile());
+            clipTosaerba = AudioSystem.getClip();
+            clipTosaerba.open(tosaerba);
+        } catch(Exception ex) {
+            System.out.println("Error with playing sound.");
+            ex.printStackTrace();
+        }
     }
     
     
