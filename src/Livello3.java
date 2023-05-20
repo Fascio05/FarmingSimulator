@@ -388,7 +388,7 @@ public class Livello3 extends javax.swing.JFrame {
         al.add(jLabel334);
         al.add(jLabel335);
         al.add(jLabel336);
-        //al.add(button, bagC);
+        al.add(jLabel337);
         al.add(jLabel338);
         al.add(jLabel339);
         al.add(jLabel340);
@@ -491,6 +491,16 @@ public class Livello3 extends javax.swing.JFrame {
         al.add(jLabel437);
         al.add(jLabel438);
         al.add(jLabel439);
+        al.add(jLabel440);
+        al.add(jLabel441);
+        al.add(jLabel442);
+        al.add(jLabel443);
+        al.add(jLabel444);
+        al.add(jLabel445);
+        al.add(jLabel446);
+        al.add(jLabel447);
+        al.add(jLabel448);
+        al.add(jLabel449);
         al.add(jLabel450);
         al.add(jLabel451);
         al.add(jLabel452);
