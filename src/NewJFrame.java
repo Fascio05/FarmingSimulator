@@ -111,8 +111,8 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_inserireNicknameActionPerformed
 
     private void avviaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_avviaActionPerformed
-
-        HubLivelli a2 = new HubLivelli();
+            Livello0 l = new Livello0();
+        //HubLivelli a2 = new HubLivelli();
     }//GEN-LAST:event_avviaActionPerformed
 
     /**
