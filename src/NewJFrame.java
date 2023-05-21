@@ -111,8 +111,8 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_inserireNicknameActionPerformed
 
     private void avviaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_avviaActionPerformed
-
-        HubLivelli a2 = new HubLivelli();
+            livello2 l = new livello2();
+        //HubLivelli a2 = new HubLivelli(); //apre la finestra per scegliere il livello da giocare
     }//GEN-LAST:event_avviaActionPerformed
 
     /**

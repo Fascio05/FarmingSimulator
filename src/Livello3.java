@@ -17,17 +17,17 @@ import javax.swing.JLabel;
  */
 public class Livello3 extends javax.swing.JFrame {
 
-    AudioInputStream HeyDay, bum;
+    AudioInputStream HeyDay, bum; //variabili contenenti la musica di sottofondo e il rumore in caso di collisione
     Clip clip, clipBum;
     
-    ArrayList<JLabel> al = new ArrayList<JLabel>();
+    ArrayList<JLabel> al = new ArrayList<JLabel>(); //arraylist contenente tutti i JLabel
     
-    int matrice[][] = {{3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1},
-                       {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,1},
-                       {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,1},
-                       {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1},
-                       {0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1},
-                       {0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0},
+    int matrice[][] = {{3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1}, //matrice che rappresenta la mappa con i numeri
+                       {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,1}, //0 = erba alta
+                       {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,1}, //1 = ostacolo
+                       {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1}, //2 = erba tagliata
+                       {0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1}, //3 = tagliaerba
+                       {0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0}, //4 = zona non percorribile dal tagliaerba
                        {0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0},
                        {0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                        {0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -48,7 +48,7 @@ public class Livello3 extends javax.swing.JFrame {
         setLocationRelativeTo(null); //centrare nello schermo
         setVisible(true);
         
-        playHeyDay();
+        playHeyDay(); // avvia la musica di sottofondo
         
         addKeyListener(new MyKeyListener(this));
         
@@ -631,7 +631,7 @@ public class Livello3 extends javax.swing.JFrame {
         
     }
 
-    private void playHeyDay(){
+    private void playHeyDay(){ // apre e avvia la musica di sottofondo
         try {
             HeyDay = AudioSystem.getAudioInputStream(new File("src/audio/Hey-Day.wav").getAbsoluteFile());
             clip = AudioSystem.getClip();
