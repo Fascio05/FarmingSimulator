@@ -14,6 +14,8 @@ public class NewJFrame extends javax.swing.JFrame {
      */
     public NewJFrame() {
         initComponents();
+        setLocationRelativeTo(null); //centrare nello schermo
+        setVisible(true);
     }
 
     /**
@@ -110,7 +112,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void avviaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_avviaActionPerformed
 
-        livello2 a2 = new livello2();
+        HubLivelli a2 = new HubLivelli();
     }//GEN-LAST:event_avviaActionPerformed
 
     /**
