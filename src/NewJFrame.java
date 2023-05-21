@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*ggggggggggg
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -8,7 +11,8 @@
  * @author netti
  */
 public class NewJFrame extends javax.swing.JFrame {
-
+    
+    boolean colore = true; //colore tagliaerba: true = rosso, false = nero
     /**
      * Creates new form NewJFrame
      */
@@ -16,6 +20,7 @@ public class NewJFrame extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null); //centrare nello schermo
         setVisible(true);
+        
     }
 
     /**
@@ -34,9 +39,9 @@ public class NewJFrame extends javax.swing.JFrame {
         imgRosso = new javax.swing.JLabel();
         imgBlu = new javax.swing.JLabel();
         avvia = new javax.swing.JButton();
-        sfondo = new javax.swing.JLabel();
         spunta1 = new javax.swing.JLabel();
         spunta2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Farming simulator");
@@ -64,11 +69,21 @@ public class NewJFrame extends javax.swing.JFrame {
         inserireNickname.setBounds(495, 122, 170, 30);
 
         imgRosso.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/rosso.png"))); // NOI18N
+        imgRosso.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cliccaTosaerbaRosso(evt);
+            }
+        });
         jPanel.add(imgRosso);
         imgRosso.setBounds(190, 180, 267, 150);
 
         imgBlu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/blu.png"))); // NOI18N
         imgBlu.setToolTipText("");
+        imgBlu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cliccaTosaerbaNero(evt);
+            }
+        });
         jPanel.add(imgBlu);
         imgBlu.setBounds(515, 188, 267, 150);
 
@@ -83,13 +98,15 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel.add(avvia);
         avvia.setBounds(320, 410, 359, 70);
 
-        sfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/sfondo erba.jpg"))); // NOI18N
-        jPanel.add(sfondo);
-        sfondo.setBounds(0, 0, 960, 540);
+        spunta1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/spunta.png"))); // NOI18N
         jPanel.add(spunta1);
         spunta1.setBounds(280, 340, 50, 50);
         jPanel.add(spunta2);
         spunta2.setBounds(620, 350, 50, 50);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/sfondo erba.jpg"))); // NOI18N
+        jPanel.add(jLabel1);
+        jLabel1.setBounds(0, 0, 960, 540);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -113,16 +130,30 @@ public class NewJFrame extends javax.swing.JFrame {
     private void avviaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_avviaActionPerformed
 
 
-        HubLivelli a2 = new HubLivelli();
+        HubLivelli a2 = new HubLivelli(this);
         setVisible(false);
         //HubLivelli a2 = new HubLivelli(); //apre la finestra per scegliere il livello da giocare
       
     }//GEN-LAST:event_avviaActionPerformed
 
+    private void cliccaTosaerbaRosso(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cliccaTosaerbaRosso
+        spunta1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/spunta.png")));
+        spunta2.setIcon(new javax.swing.ImageIcon(getClass().getResource("")));
+        colore = true;
+    }//GEN-LAST:event_cliccaTosaerbaRosso
+
+    private void cliccaTosaerbaNero(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cliccaTosaerbaNero
+        spunta2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/spunta.png")));
+        spunta1.setIcon(new javax.swing.ImageIcon(getClass().getResource("")));
+        colore = false;
+    }//GEN-LAST:event_cliccaTosaerbaNero
+
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        
+        
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -159,9 +190,9 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel imgBlu;
     private javax.swing.JLabel imgRosso;
     private javax.swing.JTextField inserireNickname;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel;
     private javax.swing.JLabel nickname;
-    private javax.swing.JLabel sfondo;
     private javax.swing.JLabel spunta1;
     private javax.swing.JLabel spunta2;
     private javax.swing.JLabel titolo;

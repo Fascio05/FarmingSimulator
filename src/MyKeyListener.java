@@ -28,6 +28,7 @@ public class MyKeyListener implements KeyListener {
     private Timer timer;   //timer per muovere il tagliaerba di una casella ogni x millisexondi
     int lvCorrente = 0;    //variabile per far sapere ai metodi cosa fare in base al livello che è in corso
     KeyEvent x;            //tasto premuto
+    NewJFrame f;  //collegamento a newJFrame per accedera alla variabile colore del tagliaerba        
     Livello0 f0;
     Livello1 f1;
     livello2 f2;
@@ -47,9 +48,26 @@ public class MyKeyListener implements KeyListener {
       ma usano livelli e immagini diverse)
     */
     
-    public MyKeyListener(Livello0 f0){ //costruttore dell'ascoltatore per il livello 0
+    public MyKeyListener(Livello0 f0, NewJFrame f){ //costruttore dell'ascoltatore per il livello 0
         this.f0=f0;
+        this.f=f;
         lvCorrente = 0;
+        /*
+          Questo ifm controlla se il tagliaerba deve essere nero controlla dove si trova
+          e ne cambia il colore prima di premere qualsiasi tasto
+        */
+        if(f.colore == false){       
+            for(int i=0;i<10;i++){  //controlla dobe si trova il tagliaerba
+                for(int j=0;j<18;j++){
+                    if(f0.matrice[i][j] == 3){
+                        v=i; //ne memorizza gli indici della matrice
+                        o=j;
+                        break;
+                    }
+                }
+            }
+            ((JLabel)f0.al.get(((v)*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  68x68.jpg")));
+        }
         timer = new Timer(170, new ActionListener() {  //alla pressione di un tasto ogni 170 ms esegue le istruzioni dell'actionPerformed
             public void actionPerformed(ActionEvent e) {
                     if(x.getKeyCode() == KeyEvent.VK_W){  //se premuto il tasto w
@@ -57,8 +75,11 @@ public class MyKeyListener implements KeyListener {
                         if(tagliabile == 0 || tagliabile == 2){  //se non c'è un ostacolo e non è finita la mappa
                             ((JLabel)f0.al.get((v*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV0-68x68.png")));
                             // al posto del tagliaerba viene messa l'erba tagliata
-                            ((JLabel)f0.al.get(((v-1)*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV0-68x68.jpg"))); 
-                            //nella casella successiva viene messo il tagliaerba
+                            if(f.colore == true) //tagliaerba 
+                                ((JLabel)f0.al.get(((v-1)*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV0-68x68.jpg"))); 
+                                //nella casella successiva viene messo il tagliaerba
+                            if(f.colore == false)
+                                ((JLabel)f0.al.get(((v-1)*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  68x68.jpg")));
                             
                             /*
                               I JLabel che contengono le immagini sono in un arraylist, mentre il contenuto della casella viene controllato nella matrice,
@@ -75,7 +96,10 @@ public class MyKeyListener implements KeyListener {
                         tagliabile = controllaCasellaLV0(f0);  //avvia il metodo per controllare cosa c'è nella casella successiva
                         if(tagliabile == 0 || tagliabile == 2){  //se non c'è un ostacolo e non è finita la mappa
                             ((JLabel)f0.al.get((v*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV0-68x68.png"))); 
-                            ((JLabel)f0.al.get((v*18)-1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 68x68 LV0 sinistra.jpg")));  
+                            if(f.colore == true)
+                                ((JLabel)f0.al.get((v*18)-1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 68x68 LV0 sinistra.jpg")));  
+                            if(f.colore == false)
+                                ((JLabel)f0.al.get((v*18)-1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  68x68 sinistra.jpg")));
                             //in base alla direzione in cui si muove il tagliaerba l'immagine viene girata
                         }
                     }
@@ -83,14 +107,20 @@ public class MyKeyListener implements KeyListener {
                         tagliabile = controllaCasellaLV0(f0);  //avvia il metodo per controllare cosa c'è nella casella successiva
                         if(tagliabile == 0 || tagliabile == 2){  //se non c'è un ostacolo e non è finita la mappa
                             ((JLabel)f0.al.get((v*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV0-68x68.png"))); 
-                            ((JLabel)f0.al.get((v*18)+1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 68x68 LV0 destra.jpg")));  
+                            if(f.colore == true)
+                                ((JLabel)f0.al.get((v*18)+1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 68x68 LV0 destra.jpg")));  
+                            if(f.colore == false)
+                                ((JLabel)f0.al.get((v*18)+1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  68x68 destra.jpg")));
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_S){  //se premuto il tasto s
                         tagliabile = controllaCasellaLV0(f0);  //avvia il metodo per controllare cosa c'è nella casella successiva
                         if(tagliabile == 0 || tagliabile == 2){  //se non c'è un ostacolo e non è finita la mappa
                             ((JLabel)f0.al.get((v*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV0-68x68.png"))); 
-                            ((JLabel)f0.al.get(((v+1)*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 68x68 LV0 basso.jpg"))); 
+                            if(f.colore == true)
+                                ((JLabel)f0.al.get(((v+1)*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 68x68 LV0 basso.jpg"))); 
+                            if(f.colore == false)
+                                ((JLabel)f0.al.get(((v+1)*18)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  68x68 basso.jpg")));
                         }
                     }
                     controllaFineLV0(); //controlla se tutta l'erba è stata tagliata per poi far procedere il gioco
@@ -98,37 +128,62 @@ public class MyKeyListener implements KeyListener {
         });
     }
     
-    public MyKeyListener(Livello1 f1){ //costruttore dell'ascoltatore per il livello 1
+    public MyKeyListener(Livello1 f1, NewJFrame f){ //costruttore dell'ascoltatore per il livello 1
         this.f1=f1;
+        this.f=f;
         lvCorrente = 1;
+        if(f.colore == false){       
+            for(int i=0;i<12;i++){  //controlla dobe si trova il tagliaerba
+                for(int j=0;j<21;j++){
+                    if(f1.matrice[i][j] == 3){
+                        v=i; //ne memorizza gli indici della matrice
+                        o=j;
+                        break;
+                    }
+                }
+            }
+            ((JLabel)f1.al.get(((v)*21)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  58x58.jpg")));
+        }
         timer = new Timer(170, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                     if(x.getKeyCode() == KeyEvent.VK_W){
                         tagliabile = controllaCasellaLV1(f1);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f1.al.get((v*21)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV1-58x58.png"))); 
-                            ((JLabel)f1.al.get(((v-1)*21)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV1-58x58.jpg"))); 
+                            if(f.colore == true)
+                                ((JLabel)f1.al.get(((v-1)*21)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV1-58x58.jpg"))); 
+                            if(f.colore == false)
+                                ((JLabel)f1.al.get(((v-1)*21)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  58x58.jpg")));
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_A){
                         tagliabile = controllaCasellaLV1(f1);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f1.al.get((v*21)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV1-58x58.png"))); 
-                            ((JLabel)f1.al.get((v*21)-1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 58x58 LV1 sinistra.jpg")));  
+                            if(f.colore == true)
+                                ((JLabel)f1.al.get((v*21)-1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 58x58 LV1 sinistra.jpg")));  
+                            if(f.colore == false)
+                                ((JLabel)f1.al.get((v*21)-1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  58x58 sinistra.jpg")));
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_D){
                         tagliabile = controllaCasellaLV1(f1);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f1.al.get((v*21)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV1-58x58.png"))); 
-                            ((JLabel)f1.al.get((v*21)+1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 58x58 LV1 destra.jpg")));  
+                            if(f.colore == true)
+                                ((JLabel)f1.al.get((v*21)+1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 58x58 LV1 destra.jpg")));  
+                            if(f.colore == false)
+                                ((JLabel)f1.al.get((v*21)+1+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  58x58 destra.jpg")));
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_S){
                         tagliabile = controllaCasellaLV1(f1);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f1.al.get((v*21)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV1-58x58.png"))); 
-                            ((JLabel)f1.al.get(((v+1)*21)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 58x58 LV1 basso.jpg"))); 
+                            if(f.colore == true)
+                                ((JLabel)f1.al.get(((v+1)*21)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 58x58 LV1 basso.jpg"))); 
+                            if(f.colore == false)
+                                ((JLabel)f1.al.get(((v+1)*21)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  58x58 basso.jpg")));
                         }
                     }
                     controllaFineLV1();
@@ -137,37 +192,62 @@ public class MyKeyListener implements KeyListener {
     }
    
     
-    public MyKeyListener(livello2 f2){ //costruttore dell'ascoltatore per il livello 2
+    public MyKeyListener(livello2 f2, NewJFrame f){ //costruttore dell'ascoltatore per il livello 2
         this.f2=f2;
+        this.f=f;
         lvCorrente = 2;
+        if(f.colore == false){       
+            for(int i=0;i<14;i++){  //controlla dobe si trova il tagliaerba
+                for(int j=0;j<25;j++){
+                    if(f2.matrice[i][j] == 3){
+                        v=i; //ne memorizza gli indici della matrice
+                        o=j;
+                        break;
+                    }
+                }
+            }
+            ((JLabel)f2.al.get(((v)*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  49x49.jpg")));
+        }
         timer = new Timer(170, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                     if(x.getKeyCode() == KeyEvent.VK_W){
                         tagliabile = controllaCasellaLV2(f2);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f2.al.get((v*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
-                            ((JLabel)f2.al.get(((v-1)*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV2-49x49.jpg"))); // NOI18N  
+                            if(f.colore == true)
+                                ((JLabel)f2.al.get(((v-1)*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV2-49x49.jpg"))); // NOI18N  
+                            if(f.colore == false)
+                                ((JLabel)f2.al.get(((v-1)*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  49x49.jpg")));
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_A){
                         tagliabile = controllaCasellaLV2(f2);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f2.al.get((v*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
-                            ((JLabel)f2.al.get((v*25)+o-1)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 49x49 LV2 sinistra.jpg"))); // NOI18N  
+                            if(f.colore == true)
+                                ((JLabel)f2.al.get((v*25)+o-1)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 49x49 LV2 sinistra.jpg"))); // NOI18N  
+                            if(f.colore == false)
+                                ((JLabel)f2.al.get((v*25)+o-1)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  49x49 sinistra.jpg")));
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_D){
                         tagliabile = controllaCasellaLV2(f2);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f2.al.get((v*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
-                            ((JLabel)f2.al.get((v*25)+o+1)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 49x49 LV2 desta.jpg"))); // NOI18N  
+                            if(f.colore == true)
+                                ((JLabel)f2.al.get((v*25)+o+1)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 49x49 LV2 desta.jpg"))); // NOI18N  
+                            if(f.colore == false)
+                                ((JLabel)f2.al.get((v*25)+o+1)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  49x49 destra.jpg")));
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_S){
                         tagliabile = controllaCasellaLV2(f2);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f2.al.get((v*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV2-49x49.png"))); // NOI18N  
-                            ((JLabel)f2.al.get(((v+1)*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 49x49 LV2 basso.jpg"))); // NOI18N  
+                            if(f.colore == true)
+                                ((JLabel)f2.al.get(((v+1)*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 49x49 LV2 basso.jpg"))); // NOI18N  
+                            if(f.colore == false)
+                                ((JLabel)f2.al.get(((v+1)*25)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  49x49 basso.jpg")));
                         }
                     }
                 controllaFineLV2();
@@ -175,37 +255,62 @@ public class MyKeyListener implements KeyListener {
         });
     }
     
-    public MyKeyListener(Livello3 f3){ //costruttore dell'ascoltatore per il livello 3
+    public MyKeyListener(Livello3 f3, NewJFrame f){ //costruttore dell'ascoltatore per il livello 3
         this.f3=f3;
+        this.f=f;
         lvCorrente = 3;
+        if(f.colore == false){       
+            for(int i=0;i<18;i++){  //controlla dobe si trova il tagliaerba
+                for(int j=0;j<32;j++){
+                    if(f3.matrice[i][j] == 3){
+                        v=i; //ne memorizza gli indici della matrice
+                        o=j;
+                        break;
+                    }
+                }
+            }
+            ((JLabel)f3.al.get(((v)*32)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  40x40.jpg")));
+        }
         timer = new Timer(170, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                     if(x.getKeyCode() == KeyEvent.VK_W){
                         tagliabile = controllaCasellaLV3(f3);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f3.al.get((v*32)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV3-40x40.png"))); // NOI18N  
-                            ((JLabel)f3.al.get(((v-1)*32)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV3-40x40.jpg"))); // NOI18N  
+                            if(f.colore == true)
+                                ((JLabel)f3.al.get(((v-1)*32)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV3-40x40.jpg"))); // NOI18N  
+                            if(f.colore == false)
+                                ((JLabel)f3.al.get(((v-1)*32)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  40x40.jpg")));
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_A){
                         tagliabile = controllaCasellaLV3(f3);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f3.al.get((v*32)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV3-40x40.png"))); // NOI18N  
-                            ((JLabel)f3.al.get((v*32)+o-1)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 40x40 LV3 sinistra.jpg"))); // NOI18N  
+                            if(f.colore == true)
+                                ((JLabel)f3.al.get((v*32)+o-1)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 40x40 LV3 sinistra.jpg"))); // NOI18N  
+                            if(f.colore == false)
+                                ((JLabel)f3.al.get((v*32)+o-1)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  40x40 sinistra.jpg")));
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_D){
                         tagliabile = controllaCasellaLV3(f3);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f3.al.get((v*32)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV3-40x40.png"))); // NOI18N  
-                            ((JLabel)f3.al.get((v*32)+o+1)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 40x40 LV3 destra.jpg"))); // NOI18N  
+                            if(f.colore == true)
+                                ((JLabel)f3.al.get((v*32)+o+1)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 40x40 LV3 destra.jpg"))); // NOI18N  
+                            if(f.colore == false)
+                                ((JLabel)f3.al.get((v*32)+o+1)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  40x40 destra.jpg")));
                         }
                     }
                     if(x.getKeyCode() == KeyEvent.VK_S){
                         tagliabile = controllaCasellaLV3(f3);
                         if(tagliabile == 0 || tagliabile == 2){
                             ((JLabel)f3.al.get((v*32)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini livelli/erba tagliataLV3-40x40.png"))); // NOI18N  
-                            ((JLabel)f3.al.get(((v+1)*32)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 40x40 LV3 basso.jpg"))); // NOI18N  
+                            if(f.colore == true)
+                                ((JLabel)f3.al.get(((v+1)*32)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/taglia erba 40x40 LV3 basso.jpg"))); // NOI18N  
+                            if(f.colore == false)
+                                ((JLabel)f3.al.get(((v+1)*32)+o)).setIcon(new ImageIcon(getClass().getResource("/immagini/tosaerba nero  40x40 basso.jpg")));
                         }
                     }
                     controllaFineLV3();

@@ -40,7 +40,7 @@ public class livello2 extends javax.swing.JFrame {
         {4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4}};
     
 
-        public livello2() {
+        public livello2(NewJFrame f) {
         initComponents();
         //setSize(960,540); pc piccoli
         setSize(1248,702); //pc normali
@@ -48,8 +48,6 @@ public class livello2 extends javax.swing.JFrame {
         setVisible(true);
         
         playHeyDay(); // avvia la musica di sottofondo
-        
-        addKeyListener(new MyKeyListener(this));
 
         /*for (int i = 1; i <= 350; i++) {
             JLabel label = new JLabel();
@@ -416,6 +414,8 @@ public class livello2 extends javax.swing.JFrame {
         al.add(jLabel348);
         al.add(jLabel349);
         al.add(jLabel350); 
+        
+        addKeyListener(new MyKeyListener(this, f));
      }
 
      private void playHeyDay(){ // apre e avvia la musica di sottofondo

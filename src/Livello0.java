@@ -33,7 +33,7 @@ public class Livello0 extends javax.swing.JFrame {
                        {1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1},
                        {1,3,0,0,0,0,0,0,1,1,0,0,0,0,1,1,1,1}};
     
-    public Livello0() {
+    public Livello0(NewJFrame f) {
         initComponents();
         //setSize(960,540); pc piccoli
         setSize(1248,702); //pc normali
@@ -41,8 +41,6 @@ public class Livello0 extends javax.swing.JFrame {
         setVisible(true);
         
         playHeyDay(); // avvia la musica di sottofondo
-        
-        addKeyListener(new MyKeyListener(this)); 
         
         al.add(jLabel1);  //memorizzazione mappa nell'arraylist (cella 0 = jlabel1 ecc...)
         al.add(jLabel2);
@@ -223,7 +221,9 @@ public class Livello0 extends javax.swing.JFrame {
         al.add(jLabel177);
         al.add(jLabel178);
         al.add(jLabel179);
-        al.add(jLabel180);    
+        al.add(jLabel180);   
+        
+        addKeyListener(new MyKeyListener(this, f));
     }
     
     private void playHeyDay(){ // apre e avvia la musica di sottofondo

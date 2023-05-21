@@ -8,11 +8,12 @@
  * @author utente
  */
 public class HubLivelli extends javax.swing.JFrame {
-
+    NewJFrame f;
     /**
      * Creates new form HubLivelli
      */
-    public HubLivelli() {
+    public HubLivelli(NewJFrame f) {
+        this.f=f;
         initComponents();
         setSize(960,580); //pc normali
         setLocationRelativeTo(null); //centrare nello schermo
@@ -148,12 +149,12 @@ public class HubLivelli extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void LV2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LV2ActionPerformed
-        Livello1 lv1 = new Livello1();
+        Livello1 lv1 = new Livello1(f);
         setVisible(false);
     }//GEN-LAST:event_LV2ActionPerformed
 
     private void LV1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LV1ActionPerformed
-        Livello0 lv0 = new Livello0();
+        Livello0 lv0 = new Livello0(f);
         setVisible(false);
         
     }//GEN-LAST:event_LV1ActionPerformed
@@ -164,49 +165,19 @@ public class HubLivelli extends javax.swing.JFrame {
     }//GEN-LAST:event_TornaInizioActionPerformed
 
     private void LV3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LV3ActionPerformed
-        livello2 lv2 = new livello2();
+        livello2 lv2 = new livello2(f);
         setVisible(false);
     }//GEN-LAST:event_LV3ActionPerformed
 
     private void LV4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LV4ActionPerformed
-        Livello3 lv3 = new Livello3();
+        Livello3 lv3 = new Livello3(f);
         setVisible(false);
     }//GEN-LAST:event_LV4ActionPerformed
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(HubLivelli.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(HubLivelli.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(HubLivelli.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(HubLivelli.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new HubLivelli().setVisible(true);
-            }
-        });
-    }
+   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JToggleButton LV1;
