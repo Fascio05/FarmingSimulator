@@ -1,5 +1,9 @@
 
+import java.io.File;
 import java.util.ArrayList;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.JLabel;
 
 /*
@@ -13,9 +17,9 @@ import javax.swing.JLabel;
  */
 public class Livello3 extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Livello3
-     */
+    AudioInputStream HeyDay, bum;
+    Clip clip, clipBum;
+    
     ArrayList<JLabel> al = new ArrayList<JLabel>();
     
     int matrice[][] = {{3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1},
@@ -43,6 +47,8 @@ public class Livello3 extends javax.swing.JFrame {
         setSize(1248,702); //pc normali
         setLocationRelativeTo(null); //centrare nello schermo
         setVisible(true);
+        
+        playHeyDay();
         
         addKeyListener(new MyKeyListener(this));
         
@@ -382,7 +388,7 @@ public class Livello3 extends javax.swing.JFrame {
         al.add(jLabel334);
         al.add(jLabel335);
         al.add(jLabel336);
-        //al.add(button, bagC);
+        al.add(jLabel337);
         al.add(jLabel338);
         al.add(jLabel339);
         al.add(jLabel340);
@@ -485,6 +491,16 @@ public class Livello3 extends javax.swing.JFrame {
         al.add(jLabel437);
         al.add(jLabel438);
         al.add(jLabel439);
+        al.add(jLabel440);
+        al.add(jLabel441);
+        al.add(jLabel442);
+        al.add(jLabel443);
+        al.add(jLabel444);
+        al.add(jLabel445);
+        al.add(jLabel446);
+        al.add(jLabel447);
+        al.add(jLabel448);
+        al.add(jLabel449);
         al.add(jLabel450);
         al.add(jLabel451);
         al.add(jLabel452);
@@ -615,6 +631,18 @@ public class Livello3 extends javax.swing.JFrame {
         
     }
 
+    private void playHeyDay(){
+        try {
+            HeyDay = AudioSystem.getAudioInputStream(new File("src/audio/Hey-Day.wav").getAbsoluteFile());
+            clip = AudioSystem.getClip();
+            clip.open(HeyDay);
+            clip.start();
+            clip.loop(100);
+        } catch(Exception ex) {
+            System.out.println("Error with playing sound.");
+            ex.printStackTrace();
+     }
+     }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
