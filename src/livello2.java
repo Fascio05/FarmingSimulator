@@ -19,17 +19,17 @@ import javax.swing.SpringLayout.Constraints;
  */
 public class livello2 extends javax.swing.JFrame {
     
-    AudioInputStream HeyDay, bum;
+    AudioInputStream HeyDay, bum; //variabili contenenti la musica di sottofondo e il rumore in caso di collisione
     Clip clip, clipBum;
     
-    ArrayList<JLabel> al = new ArrayList<JLabel>();
+    ArrayList<JLabel> al = new ArrayList<JLabel>(); //arraylist contenente tutti i JLabel
     int matrice [][]= {
-        {1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-        {1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0},
-        {0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,1,0},
-        {0,0,0,0,1,1,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,0},
-        {0,0,0,0,1,1,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0},
+        {1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, //matrice che rappresenta la mappa con i numeri
+        {1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, //0 = erba alta
+        {0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0}, //1 = ostacolo
+        {0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,1,0}, //2 = erba tagliata
+        {0,0,0,0,1,1,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,0}, //3 = tagliaerba
+        {0,0,0,0,1,1,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0}, //4 = zona non percorribile dal tagliaerba
         {0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1},
         {0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1},
         {0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -47,7 +47,7 @@ public class livello2 extends javax.swing.JFrame {
         setLocationRelativeTo(null); //centrare nello schermo
         setVisible(true);
         
-        playHeyDay();
+        playHeyDay(); // avvia la musica di sottofondo
         
         addKeyListener(new MyKeyListener(this));
 
@@ -418,7 +418,7 @@ public class livello2 extends javax.swing.JFrame {
         al.add(jLabel350); 
      }
 
-     private void playHeyDay(){
+     private void playHeyDay(){ // apre e avvia la musica di sottofondo
         try {
             HeyDay = AudioSystem.getAudioInputStream(new File("src/audio/Hey-Day.wav").getAbsoluteFile());
             clip = AudioSystem.getClip();
