@@ -36,7 +36,7 @@ public class Livello1 extends javax.swing.JFrame {
             {1,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0},
             {1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}};
             
-    public Livello1() {
+    public Livello1(NewJFrame f) {
         initComponents();
         //setSize(960,540); pc piccoli
         setSize(1248,702); //pc normali
@@ -44,8 +44,6 @@ public class Livello1 extends javax.swing.JFrame {
         setVisible(true);;
         
         playHeyDay(); // avvia la musica di sottofondo
-        
-        addKeyListener(new MyKeyListener(this));
         
         al.add(jLabel1);  //memorizzazione mappa nell'arraylist (cella 0 = jlabel1 ecc...)
         al.add(jLabel2);
@@ -299,6 +297,8 @@ public class Livello1 extends javax.swing.JFrame {
         al.add(jLabel250);
         al.add(jLabel251);
         al.add(jLabel252);
+        
+        addKeyListener(new MyKeyListener(this, f));
         }
 
     private void playHeyDay(){  // apre e avvia la musica di sottofondo
@@ -1342,37 +1342,7 @@ public class Livello1 extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Livello1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Livello1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Livello1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Livello1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Livello1().setVisible(true);
-            }
-        });
-    }
+   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
