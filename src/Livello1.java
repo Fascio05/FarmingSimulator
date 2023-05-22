@@ -34,7 +34,7 @@ public class Livello1 extends javax.swing.JFrame {
             {0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0},
             {1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0},
             {1,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0},
-            {1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}};
+            {1,1,1,0,0,0,0,4,4,4,4,4,4,4,4,4,4,4,4,4,4}};
             
     public Livello1(NewJFrame f) {
         initComponents();
@@ -581,7 +581,7 @@ public class Livello1 extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new java.awt.GridLayout(12, 21));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV1-58x58.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel1);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1232,7 +1232,7 @@ public class Livello1 extends javax.swing.JFrame {
         jLabel217.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel217);
 
-        jLabel218.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel218.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV1-58x58.jpg"))); // NOI18N
         getContentPane().add(jLabel218);
 
         jLabel219.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1295,46 +1295,46 @@ public class Livello1 extends javax.swing.JFrame {
         jLabel238.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel238);
 
-        jLabel239.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel239.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada curva new 58x58 LV1.png"))); // NOI18N
         getContentPane().add(jLabel239);
 
-        jLabel240.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel240.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada dritta 58x58 LV1.jpg"))); // NOI18N
         getContentPane().add(jLabel240);
 
-        jLabel241.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel241.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada dritta 58x58 LV1.jpg"))); // NOI18N
         getContentPane().add(jLabel241);
 
-        jLabel242.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel242.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada dritta 58x58 LV1.jpg"))); // NOI18N
         getContentPane().add(jLabel242);
 
-        jLabel243.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel243.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada dritta 58x58 LV1.jpg"))); // NOI18N
         getContentPane().add(jLabel243);
 
-        jLabel244.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel244.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada dritta 58x58 LV1.jpg"))); // NOI18N
         getContentPane().add(jLabel244);
 
-        jLabel245.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel245.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada dritta 58x58 LV1.jpg"))); // NOI18N
         getContentPane().add(jLabel245);
 
-        jLabel246.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel246.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada dritta 58x58 LV1.jpg"))); // NOI18N
         getContentPane().add(jLabel246);
 
-        jLabel247.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel247.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada dritta 58x58 LV1.jpg"))); // NOI18N
         getContentPane().add(jLabel247);
 
-        jLabel248.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel248.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada dritta 58x58 LV1.jpg"))); // NOI18N
         getContentPane().add(jLabel248);
 
-        jLabel249.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel249.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada dritta 58x58 LV1.jpg"))); // NOI18N
         getContentPane().add(jLabel249);
 
-        jLabel250.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel250.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada dritta 58x58 LV1.jpg"))); // NOI18N
         getContentPane().add(jLabel250);
 
-        jLabel251.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel251.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada dritta 58x58 LV1.jpg"))); // NOI18N
         getContentPane().add(jLabel251);
 
-        jLabel252.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
+        jLabel252.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada dritta 58x58 LV1.jpg"))); // NOI18N
         getContentPane().add(jLabel252);
 
         setBounds(0, 0, 656, 368);
