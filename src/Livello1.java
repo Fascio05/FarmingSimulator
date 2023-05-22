@@ -23,7 +23,7 @@ public class Livello1 extends javax.swing.JFrame {
     ArrayList<JLabel> al = new ArrayList<JLabel>(); //arraylist contenente tutti i JLabel
     
     int matrice [][]= {
-            {3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0}, //matrice che rappresenta la mappa con i numeri
+            {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0}, //matrice che rappresenta la mappa con i numeri
             {0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0}, //0 = erba alta
             {0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0}, //1 = ostacolo
             {0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0}, //2 = erba tagliata
@@ -33,7 +33,7 @@ public class Livello1 extends javax.swing.JFrame {
             {0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0},
             {0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0},
             {1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0},
-            {1,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0},
+            {1,1,1,0,0,0,0,3,0,0,0,1,0,0,0,0,0,0,0,1,0},
             {1,1,1,0,0,0,0,4,4,4,4,4,4,4,4,4,4,4,4,4,4}};
             
     public Livello1(NewJFrame f) {
