@@ -7,6 +7,7 @@ import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.swing.*;
+import javax.swing.plaf.ColorUIResource;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -25,6 +26,7 @@ import javax.swing.*;
 */
 public class MyKeyListener implements KeyListener {
 
+    int cont=0;
     private Timer timer;   //timer per muovere il tagliaerba di una casella ogni x millisexondi
     int lvCorrente = 0;    //variabile per far sapere ai metodi cosa fare in base al livello che è in corso
     KeyEvent x;            //tasto premuto
@@ -677,7 +679,7 @@ public class MyKeyListener implements KeyListener {
                 collisione = 'n';  //no collisione
                 l.matrice[v-1][o] = 3; //sostituisce i valori nella matrice: il tagliaerba verrà segnalato nella casella successiva
                 l.matrice[v][o] = 2; //dove c'era il tagliaerba verra segnalata erba tagliata
-                return 2;
+                return 2;       
             }                                         
             // se c'è un ostacolo
                 try {  //apre e avvia il rumore dovuto alla collisione
@@ -689,7 +691,19 @@ public class MyKeyListener implements KeyListener {
                     System.out.println("Error with playing sound.");
                     ex.printStackTrace();
                 }
-                
+                JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE); 
+                if(cont==0){
+                    ((JLabel)f0.al.get(177)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                }
+                if(cont==1){
+                    ((JLabel)f0.al.get(178)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                }
+                if(cont==2){
+                    ((JLabel)f0.al.get(179)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    HubLivelli HB = new HubLivelli(f);
+                    f0.setVisible(false);
+                }
+                cont++;
                 collisione = 'w'; //visto che c'è stata una collisione andando avanti viene segnalata
                 return 1;
         }
@@ -721,7 +735,19 @@ public class MyKeyListener implements KeyListener {
                     System.out.println("Error with playing sound.");
                     ex.printStackTrace();
                 }
-                
+                JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
+                if(cont==0){
+                    ((JLabel)f0.al.get(177)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                }
+                if(cont==1){
+                    ((JLabel)f0.al.get(178)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                }
+                if(cont==2){
+                    ((JLabel)f0.al.get(179)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    HubLivelli HB = new HubLivelli(f);
+                    f0.setVisible(false);
+                }
+                cont++;
                 collisione = 's';
                 return 1;
         }
@@ -753,7 +779,19 @@ public class MyKeyListener implements KeyListener {
                     System.out.println("Error with playing sound.");
                     ex.printStackTrace();
                 }
-                
+                JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
+                if(cont==0){
+                    ((JLabel)f0.al.get(177)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                }
+                if(cont==1){
+                    ((JLabel)f0.al.get(178)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                }
+                if(cont==2){
+                    ((JLabel)f0.al.get(179)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    HubLivelli HB = new HubLivelli(f);
+                    f0.setVisible(false);
+                }
+                cont++;
                 collisione = 'a';
                 return 1;
         }
@@ -785,7 +823,19 @@ public class MyKeyListener implements KeyListener {
                     System.out.println("Error with playing sound.");
                     ex.printStackTrace();
                 }
-                
+                JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
+                if(cont==0){
+                    ((JLabel)f0.al.get(177)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                }
+                if(cont==1){
+                    ((JLabel)f0.al.get(178)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                }
+                if(cont==2){
+                    ((JLabel)f0.al.get(179)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    HubLivelli HB = new HubLivelli(f);
+                    f0.setVisible(false);
+                }
+                cont++;
                 collisione = 'd';
                 return 1;
         }
@@ -831,7 +881,19 @@ public class MyKeyListener implements KeyListener {
                     System.out.println("Error with playing sound.");
                     ex.printStackTrace();
                 }
-                
+                JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
+                if(cont==0){
+                    ((JLabel)f1.al.get(249)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                }
+                if(cont==1){
+                    ((JLabel)f1.al.get(250)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                }
+                if(cont==2){
+                    ((JLabel)f1.al.get(251)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    HubLivelli HB = new HubLivelli(f);
+                    f1.setVisible(false);
+                }
+                cont++;
                 collisione = 'w';
                 return 1;
         }
@@ -863,7 +925,19 @@ public class MyKeyListener implements KeyListener {
                     System.out.println("Error with playing sound.");
                     ex.printStackTrace();
                 }
-                
+                JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
+                if(cont==0){
+                    ((JLabel)f1.al.get(249)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                }
+                if(cont==1){
+                    ((JLabel)f1.al.get(250)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                }
+                if(cont==2){
+                    ((JLabel)f1.al.get(251)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    HubLivelli HB = new HubLivelli(f);
+                    f1.setVisible(false);
+                }
+                cont++;
                 collisione = 's';
                 return 1;
         }
@@ -895,7 +969,19 @@ public class MyKeyListener implements KeyListener {
                     System.out.println("Error with playing sound.");
                     ex.printStackTrace();
                 }
-                
+                JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
+                if(cont==0){
+                    ((JLabel)f1.al.get(249)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                }
+                if(cont==1){
+                    ((JLabel)f1.al.get(250)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                }
+                if(cont==2){
+                    ((JLabel)f1.al.get(251)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    HubLivelli HB = new HubLivelli(f);
+                    f1.setVisible(false);
+                }
+                cont++;
                 collisione = 'a';
                 return 1;
         }
@@ -927,7 +1013,20 @@ public class MyKeyListener implements KeyListener {
                     System.out.println("Error with playing sound.");
                     ex.printStackTrace();
                 }
-                
+                JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
+                if(cont==0){
+                    ((JLabel)f1.al.get(249)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                }
+                if(cont==1){
+                    ((JLabel)f1.al.get(250)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                }
+                if(cont==2){
+                    ((JLabel)f1.al.get(251)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    HubLivelli HB = new HubLivelli(f);
+                    f1.setVisible(false);
+                }
+                System.out.println(cont);
+                cont++;
                 collisione = 'd';
                 return 1;
         }
@@ -973,7 +1072,19 @@ public class MyKeyListener implements KeyListener {
                     System.out.println("Error with playing sound.");
                     ex.printStackTrace();
                 }
-                
+                JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
+                if(cont==0){
+                    ((JLabel)f2.al.get(347)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                }
+                if(cont==1){
+                    ((JLabel)f2.al.get(348)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                }
+                if(cont==2){
+                    ((JLabel)f2.al.get(349)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    HubLivelli HB = new HubLivelli(f);
+                    f2.setVisible(false);
+                }
+                cont++;
                 collisione = 'w';
                 return 1;
         }
@@ -1005,7 +1116,19 @@ public class MyKeyListener implements KeyListener {
                     System.out.println("Error with playing sound.");
                     ex.printStackTrace();
                 }
-                
+                JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
+                if(cont==0){
+                    ((JLabel)f2.al.get(347)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                }
+                if(cont==1){
+                    ((JLabel)f2.al.get(348)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                }
+                if(cont==2){
+                    ((JLabel)f2.al.get(349)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    HubLivelli HB = new HubLivelli(f);
+                    f2.setVisible(false);
+                }
+                cont++;
                 collisione = 's';
                 return 1;
         }
@@ -1037,7 +1160,19 @@ public class MyKeyListener implements KeyListener {
                     System.out.println("Error with playing sound.");
                     ex.printStackTrace();
                 }
-                
+                JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);  
+                if(cont==0){
+                    ((JLabel)f2.al.get(347)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                }
+                if(cont==1){
+                    ((JLabel)f2.al.get(348)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                }
+                if(cont==2){
+                    ((JLabel)f2.al.get(349)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    HubLivelli HB = new HubLivelli(f);
+                    f2.setVisible(false);
+                }
+                cont++;
                 collisione = 'a';
                 return 1;
         }
@@ -1069,7 +1204,19 @@ public class MyKeyListener implements KeyListener {
                     System.out.println("Error with playing sound.");
                     ex.printStackTrace();
                 }
-                
+                JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
+                if(cont==0){
+                    ((JLabel)f2.al.get(347)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                }
+                if(cont==1){
+                    ((JLabel)f2.al.get(348)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                }
+                if(cont==2){
+                    ((JLabel)f2.al.get(349)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    HubLivelli HB = new HubLivelli(f);
+                    f2.setVisible(false);
+                }
+                cont++;
                 collisione = 'd';
                 return 1;
         }
@@ -1117,7 +1264,19 @@ public class MyKeyListener implements KeyListener {
                     System.out.println("Error with playing sound.");
                     ex.printStackTrace();
                 }
-                
+                JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
+                if(cont==0){
+                    ((JLabel)f3.al.get(573)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                }
+                if(cont==1){
+                    ((JLabel)f3.al.get(574)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                }
+                if(cont==2){
+                    ((JLabel)f3.al.get(575)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    HubLivelli HB = new HubLivelli(f);
+                    f3.setVisible(false);
+                }
+                cont++;
                 collisione = 'w';
                 return 1;
         }
@@ -1149,7 +1308,19 @@ public class MyKeyListener implements KeyListener {
                     System.out.println("Error with playing sound.");
                     ex.printStackTrace();
                 }
-                
+                JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
+                if(cont==0){
+                    ((JLabel)f3.al.get(573)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                }
+                if(cont==1){
+                    ((JLabel)f3.al.get(574)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                }
+                if(cont==2){
+                    ((JLabel)f3.al.get(575)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    HubLivelli HB = new HubLivelli(f);
+                    f3.setVisible(false);
+                }
+                cont++;
                 collisione = 's';
                 return 1;
         }
@@ -1181,7 +1352,19 @@ public class MyKeyListener implements KeyListener {
                     System.out.println("Error with playing sound.");
                     ex.printStackTrace();
                 }
-                
+                JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
+                if(cont==0){
+                    ((JLabel)f3.al.get(573)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                }
+                if(cont==1){
+                    ((JLabel)f3.al.get(574)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                }
+                if(cont==2){
+                    ((JLabel)f3.al.get(575)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    HubLivelli HB = new HubLivelli(f);
+                    f3.setVisible(false);
+                }
+                cont++;
                 collisione = 'a';
                 return 1;
         }
@@ -1213,6 +1396,19 @@ public class MyKeyListener implements KeyListener {
                     System.out.println("Error with playing sound.");
                     ex.printStackTrace();
                 }
+                JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
+                if(cont==0){
+                    ((JLabel)f3.al.get(573)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                }
+                if(cont==1){
+                    ((JLabel)f3.al.get(574)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                }
+                if(cont==2){
+                    ((JLabel)f3.al.get(575)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    HubLivelli HB = new HubLivelli(f);
+                    f3.setVisible(false);
+                }
+                cont++;
                 
                 collisione = 'd';
                 return 1;
@@ -1234,6 +1430,9 @@ public class MyKeyListener implements KeyListener {
             }
         }      //se il ciclo finisce vuol dire che l'erba è tutta tagliata, quindi si può eseguire il resto del codice del metodo
         f0.clip.stop();  //spegne la musica si sottofondo
+        HubLivelli HB = new HubLivelli(f);
+        f0.setVisible(false);
+        timer.stop();
     }
     private void controllaFineLV1(){
         for(int i=0;i<12;i++){
@@ -1244,6 +1443,9 @@ public class MyKeyListener implements KeyListener {
             }
         }
         f1.clip.stop();
+        HubLivelli HB = new HubLivelli(f);
+        f1.setVisible(false);
+        timer.stop();
     }
     private void controllaFineLV2(){
         for(int i=0;i<14;i++){
@@ -1254,6 +1456,9 @@ public class MyKeyListener implements KeyListener {
             }
         }
         f2.clip.stop();
+        HubLivelli HB = new HubLivelli(f);
+        f2.setVisible(false);
+        timer.stop();
     }
     private void controllaFineLV3(){
         for(int i=0;i<18;i++){
@@ -1264,6 +1469,9 @@ public class MyKeyListener implements KeyListener {
             }
         }
         f3.clip.stop();
+        HubLivelli HB = new HubLivelli(f);
+        f3.setVisible(false);
+        timer.stop();
     }
     
     /*

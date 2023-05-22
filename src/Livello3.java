@@ -2950,14 +2950,8 @@ public class Livello3 extends javax.swing.JFrame {
 
         jLabel573.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno1LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel573);
-
-        jLabel574.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno2LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel574);
-
-        jLabel575.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno1LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel575);
-
-        jLabel576.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/fieno2LV3-40x40.png"))); // NOI18N
         getContentPane().add(jLabel576);
 
         setBounds(0, 0, 656, 368);
