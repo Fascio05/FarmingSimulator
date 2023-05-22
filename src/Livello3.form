@@ -4042,25 +4042,10 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel574">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/fieno2LV3-40x40.png"/>
-        </Property>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel575">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/fieno1LV3-40x40.png"/>
-        </Property>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel576">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/fieno2LV3-40x40.png"/>
-        </Property>
-      </Properties>
     </Component>
   </SubComponents>
 </Form>

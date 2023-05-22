@@ -1,5 +1,6 @@
 
 import javax.swing.ImageIcon;
+import javax.swing.plaf.ColorUIResource;
 
 /*ggggggggggg
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -197,4 +198,5 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel spunta2;
     private javax.swing.JLabel titolo;
     // End of variables declaration//GEN-END:variables
+
 }
