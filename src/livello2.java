@@ -37,7 +37,7 @@ public class livello2 extends javax.swing.JFrame {
         {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0},
         {0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0,0},
         {0,1,1,1,0,0,0,0,3,0,0,0,0,0,1,1,1,0,0,1,1,0,0,0,0},
-        {4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4}};
+        {0,0,0,0,0,0,0,0,0,0,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4}};
     
 
         public livello2(NewJFrame f) {
@@ -1651,7 +1651,7 @@ public class livello2 extends javax.swing.JFrame {
         jLabel285.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel285);
 
-        jLabel286.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada ruotata lv2 49x49.jpg"))); // NOI18N
+        jLabel286.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel286);
 
         jLabel287.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1720,13 +1720,13 @@ public class livello2 extends javax.swing.JFrame {
         jLabel308.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel308);
 
-        jLabel309.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV2-49x49.jpg"))); // NOI18N
+        jLabel309.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel309);
 
         jLabel310.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel310);
 
-        jLabel311.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada ruotata lv2 49x49.jpg"))); // NOI18N
+        jLabel311.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/tagliaerbaLV2-49x49.jpg"))); // NOI18N
         getContentPane().add(jLabel311);
 
         jLabel312.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -1801,7 +1801,7 @@ public class livello2 extends javax.swing.JFrame {
         jLabel335.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel335);
 
-        jLabel336.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada curva lv2-49x49-alta.jpg"))); // NOI18N
+        jLabel336.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada curva new 49x49 LV2.png"))); // NOI18N
         getContentPane().add(jLabel336);
 
         jLabel337.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada lv2-49x49.jpg"))); // NOI18N

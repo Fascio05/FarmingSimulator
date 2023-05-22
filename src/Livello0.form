@@ -1125,7 +1125,7 @@
     <Component class="javax.swing.JLabel" name="jLabel157">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
+          <Image iconType="3" name="/immagini livelli/tagliaerbaLV0-68x68.jpg"/>
         </Property>
       </Properties>
     </Component>
@@ -1174,7 +1174,7 @@
     <Component class="javax.swing.JLabel" name="jLabel164">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/tagliaerbaLV0-68x68.jpg"/>
+          <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
         </Property>
       </Properties>
     </Component>
@@ -1251,42 +1251,42 @@
     <Component class="javax.swing.JLabel" name="jLabel175">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
+          <Image iconType="3" name="/immagini/strada curva new 68x68 LV0.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel176">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
+          <Image iconType="3" name="/immagini/strada dritta 68x68 LV0.jpg"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel177">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acquaLV0-68x68.png"/>
+          <Image iconType="3" name="/immagini/strada dritta 68x68 LV0.jpg"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel178">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acquaLV0-68x68.png"/>
+          <Image iconType="3" name="/immagini/strada dritta 68x68 LV0.jpg"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel179">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/ninfeaLV0-68x68.png"/>
+          <Image iconType="3" name="/immagini/strada dritta 68x68 LV0.jpg"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel180">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/acquaLV0-68x68.png"/>
+          <Image iconType="3" name="/immagini/strada dritta 68x68 LV0.jpg"/>
         </Property>
       </Properties>
     </Component>

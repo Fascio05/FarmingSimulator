@@ -33,7 +33,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/tagliaerbaLV3-40x40.jpg"/>
+          <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
         </Property>
       </Properties>
     </Component>
@@ -1811,14 +1811,14 @@
     <Component class="javax.swing.JLabel" name="jLabel255">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
+          <Image iconType="3" name="/immagini/taglia erba 40x40 LV3 sinistra.jpg"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel256">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
+          <Image iconType="3" name="/immagini/strada curva sin new 40x40 LV3.png"/>
         </Property>
       </Properties>
     </Component>
@@ -2042,7 +2042,7 @@
     <Component class="javax.swing.JLabel" name="jLabel288">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
+          <Image iconType="3" name="/immagini/strada alta 40x40 LV3.jpg"/>
         </Property>
       </Properties>
     </Component>
@@ -2266,7 +2266,7 @@
     <Component class="javax.swing.JLabel" name="jLabel320">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
+          <Image iconType="3" name="/immagini/strada alta 40x40 LV3.jpg"/>
         </Property>
       </Properties>
     </Component>
@@ -2490,7 +2490,7 @@
     <Component class="javax.swing.JLabel" name="jLabel352">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
+          <Image iconType="3" name="/immagini/strada alta 40x40 LV3.jpg"/>
         </Property>
       </Properties>
     </Component>
@@ -2714,7 +2714,7 @@
     <Component class="javax.swing.JLabel" name="jLabel384">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini livelli/erba alta.PNG"/>
+          <Image iconType="3" name="/immagini/strada curva new 40x40 LV3.png"/>
         </Property>
       </Properties>
     </Component>
@@ -4042,10 +4042,25 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel574">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/immagini livelli/fieno1LV3-40x40.png"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel575">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/immagini livelli/fieno1LV3-40x40.png"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel576">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/immagini livelli/fieno1LV3-40x40.png"/>
+        </Property>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
