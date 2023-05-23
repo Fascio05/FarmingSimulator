@@ -19,14 +19,15 @@ LIVELLO 3
 -grafica: Riccardo
 
 
--ascoltatore keyListener: Lorenzo
 
--eventi per il movimento: Riccardo
+- KEY LISTENER: Lorenzo
 
--evitare ostacoli: Lorenzo
+- EVENTI MOVIMENTO: Riccardo
 
--ruotare tagliaerba: Riccardo
+- EVITARE OSTACOLI: Lorenzo
 
--suoni: Lorenzo
+- RUOTARE TAGLIAERBA: Riccardo
 
--vite: Riccardo
+- SUONI: Lorenzo
+
+- VITE: Riccardo
