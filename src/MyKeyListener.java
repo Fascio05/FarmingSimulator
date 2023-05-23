@@ -707,6 +707,8 @@ public class MyKeyListener implements KeyListener {
                     ((JLabel)f0.al.get(179)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f0.setVisible(false);
+                    f0.clip.stop();
+                    f0.clip.close();
                 }
                 cont++;
                 collisione = 'w'; //visto che c'è stata una collisione andando avanti viene segnalata
@@ -751,6 +753,8 @@ public class MyKeyListener implements KeyListener {
                     ((JLabel)f0.al.get(179)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f0.setVisible(false);
+                    f0.clip.stop();
+                    f0.clip.close();
                 }
                 cont++;
                 collisione = 's';
@@ -795,6 +799,8 @@ public class MyKeyListener implements KeyListener {
                     ((JLabel)f0.al.get(179)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f0.setVisible(false);
+                    f0.clip.stop();
+                    f0.clip.close();
                 }
                 cont++;
                 collisione = 'a';
@@ -839,6 +845,8 @@ public class MyKeyListener implements KeyListener {
                     ((JLabel)f0.al.get(179)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f0.setVisible(false);
+                    f0.clip.stop();
+                    f0.clip.close();
                 }
                 cont++;
                 collisione = 'd';
@@ -897,6 +905,8 @@ public class MyKeyListener implements KeyListener {
                     ((JLabel)f1.al.get(251)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 58x58 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f1.setVisible(false);
+                    f1.clip.stop();
+                    f1.clip.close();
                 }
                 cont++;
                 collisione = 'w';
@@ -941,6 +951,8 @@ public class MyKeyListener implements KeyListener {
                     ((JLabel)f1.al.get(251)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 58x58 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f1.setVisible(false);
+                    f1.clip.stop();
+                    f1.clip.close();
                 }
                 cont++;
                 collisione = 's';
@@ -985,6 +997,8 @@ public class MyKeyListener implements KeyListener {
                     ((JLabel)f1.al.get(251)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 58x58 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f1.setVisible(false);
+                    f1.clip.stop();
+                    f1.clip.close();
                 }
                 cont++;
                 collisione = 'a';
@@ -1029,6 +1043,8 @@ public class MyKeyListener implements KeyListener {
                     ((JLabel)f1.al.get(251)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 58x58 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f1.setVisible(false);
+                    f1.clip.stop();
+                    f1.clip.close();
                 }
                 System.out.println(cont);
                 cont++;
@@ -1088,6 +1104,8 @@ public class MyKeyListener implements KeyListener {
                     ((JLabel)f2.al.get(348)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f2.setVisible(false);
+                    f2.clip.stop();
+                    f2.clip.close();
                 }
                 cont++;
                 collisione = 'w';
@@ -1132,6 +1150,8 @@ public class MyKeyListener implements KeyListener {
                     ((JLabel)f2.al.get(348)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f2.setVisible(false);
+                    f2.clip.stop();
+                    f2.clip.close();
                 }
                 cont++;
                 collisione = 's';
@@ -1176,6 +1196,8 @@ public class MyKeyListener implements KeyListener {
                     ((JLabel)f2.al.get(348)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f2.setVisible(false);
+                    f2.clip.stop();
+                    f2.clip.close();
                 }
                 cont++;
                 collisione = 'a';
@@ -1220,6 +1242,8 @@ public class MyKeyListener implements KeyListener {
                     ((JLabel)f2.al.get(348)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f2.setVisible(false);
+                    f2.clip.stop();
+                    f2.clip.close();
                 }
                 cont++;
                 collisione = 'd';
@@ -1280,6 +1304,8 @@ public class MyKeyListener implements KeyListener {
                     ((JLabel)f3.al.get(351)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 40x40 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f3.setVisible(false);
+                    f3.clip.stop();
+                    f3.clip.close();
                 }
                 cont++;
                 collisione = 'w';
@@ -1324,6 +1350,8 @@ public class MyKeyListener implements KeyListener {
                     ((JLabel)f3.al.get(351)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 40x40 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f3.setVisible(false);
+                    f3.clip.stop();
+                    f3.clip.close();
                 }
                 cont++;
                 collisione = 's';
@@ -1368,6 +1396,8 @@ public class MyKeyListener implements KeyListener {
                     ((JLabel)f3.al.get(351)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 40x40 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f3.setVisible(false);
+                    f3.clip.stop();
+                    f3.clip.close();
                 }
                 cont++;
                 collisione = 'a';
@@ -1412,6 +1442,8 @@ public class MyKeyListener implements KeyListener {
                     ((JLabel)f3.al.get(351)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 40x40 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f3.setVisible(false);
+                    f3.clip.stop();
+                    f3.clip.close();
                 }
                 cont++;
                 
