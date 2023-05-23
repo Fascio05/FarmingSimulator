@@ -691,15 +691,20 @@ public class MyKeyListener implements KeyListener {
                     System.out.println("Error with playing sound.");
                     ex.printStackTrace();
                 }
+                /*
+                  Il seguente codice fa comparire un avviso ogni volta che si va addosso ad un ostacolo,
+                  gli if controllano quante collisioni ci sono gia state e la volta dopo tolgono il cuore successivo.
+                  Una volta finiti i cuori bisogna ricominciare da capo.
+                */
                 JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE); 
                 if(cont==0){
-                    ((JLabel)f0.al.get(177)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                    ((JLabel)f0.al.get(177)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N  
                 }
                 if(cont==1){
-                    ((JLabel)f0.al.get(178)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f0.al.get(178)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N                      
                 }
                 if(cont==2){
-                    ((JLabel)f0.al.get(179)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f0.al.get(179)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f0.setVisible(false);
                 }
@@ -737,13 +742,13 @@ public class MyKeyListener implements KeyListener {
                 }
                 JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
                 if(cont==0){
-                    ((JLabel)f0.al.get(177)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                    ((JLabel)f0.al.get(177)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N  
                 }
                 if(cont==1){
-                    ((JLabel)f0.al.get(178)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f0.al.get(178)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N                      
                 }
                 if(cont==2){
-                    ((JLabel)f0.al.get(179)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f0.al.get(179)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f0.setVisible(false);
                 }
@@ -781,13 +786,13 @@ public class MyKeyListener implements KeyListener {
                 }
                 JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
                 if(cont==0){
-                    ((JLabel)f0.al.get(177)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                    ((JLabel)f0.al.get(177)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N  
                 }
                 if(cont==1){
-                    ((JLabel)f0.al.get(178)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f0.al.get(178)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N                      
                 }
                 if(cont==2){
-                    ((JLabel)f0.al.get(179)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f0.al.get(179)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f0.setVisible(false);
                 }
@@ -825,13 +830,13 @@ public class MyKeyListener implements KeyListener {
                 }
                 JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
                 if(cont==0){
-                    ((JLabel)f0.al.get(177)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                    ((JLabel)f0.al.get(177)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N  
                 }
                 if(cont==1){
-                    ((JLabel)f0.al.get(178)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f0.al.get(178)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N                      
                 }
                 if(cont==2){
-                    ((JLabel)f0.al.get(179)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f0.al.get(179)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f0.setVisible(false);
                 }
@@ -883,13 +888,13 @@ public class MyKeyListener implements KeyListener {
                 }
                 JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
                 if(cont==0){
-                    ((JLabel)f1.al.get(249)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                    ((JLabel)f1.al.get(249)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 58x58 strada.jpg"))); // NOI18N  
                 }
                 if(cont==1){
-                    ((JLabel)f1.al.get(250)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f1.al.get(250)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 58x58 strada.jpg"))); // NOI18N                      
                 }
                 if(cont==2){
-                    ((JLabel)f1.al.get(251)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f1.al.get(251)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 58x58 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f1.setVisible(false);
                 }
@@ -927,13 +932,13 @@ public class MyKeyListener implements KeyListener {
                 }
                 JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
                 if(cont==0){
-                    ((JLabel)f1.al.get(249)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                    ((JLabel)f1.al.get(249)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 58x58 strada.jpg"))); // NOI18N  
                 }
                 if(cont==1){
-                    ((JLabel)f1.al.get(250)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f1.al.get(250)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 58x58 strada.jpg"))); // NOI18N                      
                 }
                 if(cont==2){
-                    ((JLabel)f1.al.get(251)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f1.al.get(251)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 58x58 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f1.setVisible(false);
                 }
@@ -971,13 +976,13 @@ public class MyKeyListener implements KeyListener {
                 }
                 JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
                 if(cont==0){
-                    ((JLabel)f1.al.get(249)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                    ((JLabel)f1.al.get(249)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 58x58 strada.jpg"))); // NOI18N  
                 }
                 if(cont==1){
-                    ((JLabel)f1.al.get(250)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f1.al.get(250)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 58x58 strada.jpg"))); // NOI18N                      
                 }
                 if(cont==2){
-                    ((JLabel)f1.al.get(251)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f1.al.get(251)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 58x58 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f1.setVisible(false);
                 }
@@ -1015,13 +1020,13 @@ public class MyKeyListener implements KeyListener {
                 }
                 JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
                 if(cont==0){
-                    ((JLabel)f1.al.get(249)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                    ((JLabel)f1.al.get(249)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 58x58 strada.jpg"))); // NOI18N  
                 }
                 if(cont==1){
-                    ((JLabel)f1.al.get(250)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f1.al.get(250)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 58x58 strada.jpg"))); // NOI18N                      
                 }
                 if(cont==2){
-                    ((JLabel)f1.al.get(251)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f1.al.get(251)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 58x58 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f1.setVisible(false);
                 }
@@ -1074,13 +1079,13 @@ public class MyKeyListener implements KeyListener {
                 }
                 JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
                 if(cont==0){
-                    ((JLabel)f2.al.get(347)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                    ((JLabel)f2.al.get(346)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.jpg"))); // NOI18N  
                 }
                 if(cont==1){
-                    ((JLabel)f2.al.get(348)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f2.al.get(347)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.jpg"))); // NOI18N                      
                 }
                 if(cont==2){
-                    ((JLabel)f2.al.get(349)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f2.al.get(348)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f2.setVisible(false);
                 }
@@ -1118,13 +1123,13 @@ public class MyKeyListener implements KeyListener {
                 }
                 JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
                 if(cont==0){
-                    ((JLabel)f2.al.get(347)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                    ((JLabel)f2.al.get(346)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.jpg"))); // NOI18N  
                 }
                 if(cont==1){
-                    ((JLabel)f2.al.get(348)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f2.al.get(347)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.jpg"))); // NOI18N                      
                 }
                 if(cont==2){
-                    ((JLabel)f2.al.get(349)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f2.al.get(348)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f2.setVisible(false);
                 }
@@ -1162,13 +1167,13 @@ public class MyKeyListener implements KeyListener {
                 }
                 JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);  
                 if(cont==0){
-                    ((JLabel)f2.al.get(347)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                    ((JLabel)f2.al.get(346)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.jpg"))); // NOI18N  
                 }
                 if(cont==1){
-                    ((JLabel)f2.al.get(348)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f2.al.get(347)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.jpg"))); // NOI18N                      
                 }
                 if(cont==2){
-                    ((JLabel)f2.al.get(349)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f2.al.get(348)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f2.setVisible(false);
                 }
@@ -1206,13 +1211,13 @@ public class MyKeyListener implements KeyListener {
                 }
                 JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
                 if(cont==0){
-                    ((JLabel)f2.al.get(347)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                    ((JLabel)f2.al.get(346)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.jpg"))); // NOI18N  
                 }
                 if(cont==1){
-                    ((JLabel)f2.al.get(348)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f2.al.get(347)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.jpg"))); // NOI18N                      
                 }
                 if(cont==2){
-                    ((JLabel)f2.al.get(349)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f2.al.get(348)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f2.setVisible(false);
                 }
@@ -1266,13 +1271,13 @@ public class MyKeyListener implements KeyListener {
                 }
                 JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
                 if(cont==0){
-                    ((JLabel)f3.al.get(573)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                    ((JLabel)f3.al.get(287)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 40x40 strada.jpg"))); // NOI18N  
                 }
                 if(cont==1){
-                    ((JLabel)f3.al.get(574)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f3.al.get(319)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 40x40 strada.jpg"))); // NOI18N                      
                 }
                 if(cont==2){
-                    ((JLabel)f3.al.get(575)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f3.al.get(351)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 40x40 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f3.setVisible(false);
                 }
@@ -1310,13 +1315,13 @@ public class MyKeyListener implements KeyListener {
                 }
                 JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
                 if(cont==0){
-                    ((JLabel)f3.al.get(573)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                    ((JLabel)f3.al.get(287)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 40x40 strada.jpg"))); // NOI18N  
                 }
                 if(cont==1){
-                    ((JLabel)f3.al.get(574)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f3.al.get(319)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 40x40 strada.jpg"))); // NOI18N                      
                 }
                 if(cont==2){
-                    ((JLabel)f3.al.get(575)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f3.al.get(351)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 40x40 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f3.setVisible(false);
                 }
@@ -1354,13 +1359,13 @@ public class MyKeyListener implements KeyListener {
                 }
                 JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
                 if(cont==0){
-                    ((JLabel)f3.al.get(573)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                    ((JLabel)f3.al.get(287)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 40x40 strada.jpg"))); // NOI18N  
                 }
                 if(cont==1){
-                    ((JLabel)f3.al.get(574)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f3.al.get(319)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 40x40 strada.jpg"))); // NOI18N                      
                 }
                 if(cont==2){
-                    ((JLabel)f3.al.get(575)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f3.al.get(351)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 40x40 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f3.setVisible(false);
                 }
@@ -1398,13 +1403,13 @@ public class MyKeyListener implements KeyListener {
                 }
                 JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);
                 if(cont==0){
-                    ((JLabel)f3.al.get(573)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N  
+                    ((JLabel)f3.al.get(287)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 40x40 strada.jpg"))); // NOI18N  
                 }
                 if(cont==1){
-                    ((JLabel)f3.al.get(574)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f3.al.get(319)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 40x40 strada.jpg"))); // NOI18N                      
                 }
                 if(cont==2){
-                    ((JLabel)f3.al.get(575)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 49x49 strada.png"))); // NOI18N                      
+                    ((JLabel)f3.al.get(351)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 40x40 strada.jpg"))); // NOI18N                      
                     HubLivelli HB = new HubLivelli(f);
                     f3.setVisible(false);
                 }

@@ -964,13 +964,13 @@ public class Livello0 extends javax.swing.JFrame {
         jLabel177.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada dritta 68x68 LV0.jpg"))); // NOI18N
         getContentPane().add(jLabel177);
 
-        jLabel178.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada dritta 68x68 LV0.jpg"))); // NOI18N
+        jLabel178.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/cuore pieno 68x68 strada.jpg"))); // NOI18N
         getContentPane().add(jLabel178);
 
-        jLabel179.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada dritta 68x68 LV0.jpg"))); // NOI18N
+        jLabel179.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/cuore pieno 68x68 strada.jpg"))); // NOI18N
         getContentPane().add(jLabel179);
 
-        jLabel180.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada dritta 68x68 LV0.jpg"))); // NOI18N
+        jLabel180.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/cuore pieno 68x68 strada.jpg"))); // NOI18N
         getContentPane().add(jLabel180);
 
         setBounds(0, 0, 656, 368);

@@ -78,7 +78,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel.add(imgRosso);
         imgRosso.setBounds(190, 180, 267, 150);
 
-        imgBlu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/blu.png"))); // NOI18N
+        imgBlu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/nero.png"))); // NOI18N
         imgBlu.setToolTipText("");
         imgBlu.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -86,7 +86,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
         jPanel.add(imgBlu);
-        imgBlu.setBounds(515, 188, 267, 150);
+        imgBlu.setBounds(515, 178, 267, 160);
 
         avvia.setBackground(new java.awt.Color(0, 153, 51));
         avvia.setFont(new java.awt.Font("Segoe UI", 3, 36)); // NOI18N
