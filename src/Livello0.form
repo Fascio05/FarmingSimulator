@@ -1272,21 +1272,21 @@
     <Component class="javax.swing.JLabel" name="jLabel178">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini/strada dritta 68x68 LV0.jpg"/>
+          <Image iconType="3" name="/immagini/cuore pieno 68x68 strada.jpg"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel179">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini/strada dritta 68x68 LV0.jpg"/>
+          <Image iconType="3" name="/immagini/cuore pieno 68x68 strada.jpg"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel180">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini/strada dritta 68x68 LV0.jpg"/>
+          <Image iconType="3" name="/immagini/cuore pieno 68x68 strada.jpg"/>
         </Property>
       </Properties>
     </Component>

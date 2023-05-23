@@ -2042,7 +2042,7 @@
     <Component class="javax.swing.JLabel" name="jLabel288">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini/strada alta 40x40 LV3.jpg"/>
+          <Image iconType="3" name="/immagini/cuore pieno 40x40 strada.jpg"/>
         </Property>
       </Properties>
     </Component>
@@ -2266,7 +2266,7 @@
     <Component class="javax.swing.JLabel" name="jLabel320">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini/strada alta 40x40 LV3.jpg"/>
+          <Image iconType="3" name="/immagini/cuore pieno 40x40 strada.jpg"/>
         </Property>
       </Properties>
     </Component>
@@ -2490,7 +2490,7 @@
     <Component class="javax.swing.JLabel" name="jLabel352">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/immagini/strada alta 40x40 LV3.jpg"/>
+          <Image iconType="3" name="/immagini/cuore pieno 40x40 strada.jpg"/>
         </Property>
       </Properties>
     </Component>
