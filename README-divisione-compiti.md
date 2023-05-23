@@ -20,8 +20,13 @@ LIVELLO 3
 
 
 -ascoltatore keyListener: Lorenzo
+
 -eventi per il movimento: Riccardo
+
 -evitare ostacoli: Lorenzo
+
 -ruotare tagliaerba: Riccardo
+
 -suoni: Lorenzo
+
 -vite: Riccardo
