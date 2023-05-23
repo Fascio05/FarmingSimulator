@@ -28,122 +28,103 @@ public class HubLivelli extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        java.awt.GridBagConstraints gridBagConstraints;
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
         LV1 = new javax.swing.JToggleButton();
         LV2 = new javax.swing.JToggleButton();
         LV3 = new javax.swing.JToggleButton();
         LV4 = new javax.swing.JToggleButton();
-        jPanel3 = new javax.swing.JPanel();
         TornaInizio = new javax.swing.JToggleButton();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(960, 540));
+        setResizable(false);
         getContentPane().setLayout(null);
 
-        jPanel1.setPreferredSize(new java.awt.Dimension(960, 400));
-        jPanel1.setLayout(null);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/MAPPA 1 PROG FINALE.png"))); // NOI18N
-        jLabel1.setLabelFor(jLabel1);
-        jLabel1.setToolTipText("");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 232, 400);
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/MAPPA 2 PROG FINALE.png"))); // NOI18N
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(232, 0, 232, 400);
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/MAPPA 3 PROG FINALE.png"))); // NOI18N
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(464, 0, 232, 400);
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/MAPPA 4 PROG FINALE.png"))); // NOI18N
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(696, 0, 232, 400);
-
-        getContentPane().add(jPanel1);
-        jPanel1.setBounds(32, 0, 928, 400);
-
-        jPanel2.setPreferredSize(new java.awt.Dimension(960, 70));
-        jPanel2.setLayout(new java.awt.GridBagLayout());
-
+        LV1.setBackground(new java.awt.Color(0, 102, 102));
+        LV1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         LV1.setText("LIVELLO 1");
         LV1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LV1ActionPerformed(evt);
             }
         });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(23, 316, 24, 0);
-        jPanel2.add(LV1, gridBagConstraints);
+        getContentPane().add(LV1);
+        LV1.setBounds(212, 383, 120, 40);
 
+        LV2.setBackground(new java.awt.Color(0, 102, 102));
+        LV2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         LV2.setText("LIVELLO 2");
         LV2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LV2ActionPerformed(evt);
             }
         });
-        jPanel2.add(LV2, new java.awt.GridBagConstraints());
+        getContentPane().add(LV2);
+        LV2.setBounds(352, 383, 120, 40);
 
+        LV3.setBackground(new java.awt.Color(0, 102, 102));
+        LV3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         LV3.setText("LIVELLO 3");
         LV3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LV3ActionPerformed(evt);
             }
         });
-        jPanel2.add(LV3, new java.awt.GridBagConstraints());
+        getContentPane().add(LV3);
+        LV3.setBounds(492, 383, 120, 40);
 
+        LV4.setBackground(new java.awt.Color(0, 102, 102));
+        LV4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         LV4.setText("LIVELLO 4");
         LV4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LV4ActionPerformed(evt);
             }
         });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(23, 0, 24, 316);
-        jPanel2.add(LV4, gridBagConstraints);
+        getContentPane().add(LV4);
+        LV4.setBounds(630, 383, 120, 40);
 
-        getContentPane().add(jPanel2);
-        jPanel2.setBounds(0, 406, 960, 70);
-
-        jPanel3.setLayout(null);
-
+        TornaInizio.setBackground(new java.awt.Color(0, 153, 51));
+        TornaInizio.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         TornaInizio.setText("INDIETRO");
         TornaInizio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TornaInizioActionPerformed(evt);
             }
         });
-        jPanel3.add(TornaInizio);
-        TornaInizio.setBounds(435, 14, 81, 23);
+        getContentPane().add(TornaInizio);
+        TornaInizio.setBounds(400, 450, 160, 50);
 
-        getContentPane().add(jPanel3);
-        jPanel3.setBounds(6, 482, 951, 51);
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/MAPPA 1 PROG FINALE.png"))); // NOI18N
+        jLabel6.setText("jLabel6");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(20, 20, 215, 330);
 
-        jPanel4.setPreferredSize(new java.awt.Dimension(20, 0));
-        jPanel4.setLayout(null);
-        getContentPane().add(jPanel4);
-        jPanel4.setBounds(6, 6, 20, 394);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/MAPPA 2 PROG FINALE.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(255, 20, 215, 330);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/sfondoHubLivelli.jpg"))); // NOI18N
-        jLabel5.setText("jLabel5");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(-30, 0, 990, 540);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/MAPPA 3 PROG FINALE.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(490, 20, 215, 330);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/MAPPA 4 PROG FINALE.png"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(725, 20, 215, 330);
+
+        jLabel4.setBackground(new java.awt.Color(0, 102, 102));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/sfondoHubLivelli.jpg"))); // NOI18N
+        jLabel4.setText("jLabel4");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(0, 0, 960, 540);
 
         setBounds(0, 0, 974, 547);
     }// </editor-fold>//GEN-END:initComponents
@@ -189,10 +170,6 @@ public class HubLivelli extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
+    private javax.swing.JLabel jLabel6;
     // End of variables declaration//GEN-END:variables
 }
