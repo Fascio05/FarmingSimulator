@@ -2093,7 +2093,7 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel287.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel287);
 
-        jLabel288.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada alta 40x40 LV3.jpg"))); // NOI18N
+        jLabel288.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/cuore pieno 40x40 strada.jpg"))); // NOI18N
         getContentPane().add(jLabel288);
 
         jLabel289.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -2189,7 +2189,7 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel319.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel319);
 
-        jLabel320.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada alta 40x40 LV3.jpg"))); // NOI18N
+        jLabel320.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/cuore pieno 40x40 strada.jpg"))); // NOI18N
         getContentPane().add(jLabel320);
 
         jLabel321.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
@@ -2285,7 +2285,7 @@ public class Livello3 extends javax.swing.JFrame {
         jLabel351.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
         getContentPane().add(jLabel351);
 
-        jLabel352.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/strada alta 40x40 LV3.jpg"))); // NOI18N
+        jLabel352.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini/cuore pieno 40x40 strada.jpg"))); // NOI18N
         getContentPane().add(jLabel352);
 
         jLabel353.setIcon(new javax.swing.ImageIcon(getClass().getResource("/immagini livelli/erba alta.PNG"))); // NOI18N
