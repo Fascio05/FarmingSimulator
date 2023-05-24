@@ -641,8 +641,10 @@ public class MyKeyListener implements KeyListener {
     @Override
     public void keyReleased(KeyEvent e) { //quando viene rilasciato il tasto che era stato premuto
         timer.stop();  //il timer che fa muovere il tagliaerba viene fermato finche non viene nuovamente premuto un tasto
-        clipTosaerba.stop();  //qualunque sia la casella successiva il rumore del tagliaerba viene fermato
-        clipTosaerba.close();  //chiude il file contenente il rumore
+        if(tosaerbaOn == true){
+            clipTosaerba.stop();  //qualunque sia la casella successiva il rumore del tagliaerba viene fermato
+            clipTosaerba.close();  //chiude il file contenente il rumore
+        }
         tosaerbaOn = false;  //si segna che il rumore è stato fermato
     }
     
