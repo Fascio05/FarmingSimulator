@@ -26,7 +26,7 @@ import javax.swing.plaf.ColorUIResource;
 */
 public class MyKeyListener implements KeyListener {
 
-    int cont=0;
+    int cont=0;    //contatore delle collisioni
     private Timer timer;   //timer per muovere il tagliaerba di una casella ogni x millisexondi
     int lvCorrente = 0;    //variabile per far sapere ai metodi cosa fare in base al livello che è in corso
     KeyEvent x;            //tasto premuto
@@ -55,7 +55,7 @@ public class MyKeyListener implements KeyListener {
         this.f=f;
         lvCorrente = 0;
         /*
-          Questo ifm controlla se il tagliaerba deve essere nero controlla dove si trova
+          Questo if, se il tagliaerba deve essere nero, controlla dove si trova
           e ne cambia il colore prima di premere qualsiasi tasto
         */
         if(f.colore == false){       
@@ -647,10 +647,11 @@ public class MyKeyListener implements KeyListener {
     }
     
     /*
-      Questa funzione controlla, in base al tasto premuto, controlla cosa c'è nella casella successiva
+      Questa funzione, in base al tasto premuto, controlla cosa c'è nella casella successiva
       e informa il timer che agirà di conseguenza.
       Se nella casella successiva c'è un ostacolo ed è stato premuto il tasto per andarci addosso,
-      viene attivato un suono che fa capire che c'è stata una collisione.
+      viene attivato un suono che fa capire che c'è stata una collisione e toglie una vita.
+      Quando finiscono le tre vite il livello viene chiuso.
       Commanto solo il primo metodo.
     */
     private int controllaCasellaLV0(Livello0 l){       //matrice[verticale][orizzontale]
@@ -696,16 +697,16 @@ public class MyKeyListener implements KeyListener {
                   gli if controllano quante collisioni ci sono gia state e la volta dopo tolgono il cuore successivo.
                   Una volta finiti i cuori bisogna ricominciare da capo.
                 */
-                JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE); 
+                JOptionPane.showMessageDialog(f,"Ti sei scontrato contro un ostacolo!!!","ATTENZIONE!",JOptionPane.WARNING_MESSAGE);  //messaggio dim avviso
                 if(cont==0){
-                    ((JLabel)f0.al.get(177)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N  
+                    ((JLabel)f0.al.get(177)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // sostituzione cuore pieno con vuoto
                 }
                 if(cont==1){
                     ((JLabel)f0.al.get(178)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N                      
                 }
-                if(cont==2){
+                if(cont==2){  //se i cuori sono esauriti
                     ((JLabel)f0.al.get(179)).setIcon(new ImageIcon(getClass().getResource("/immagini/cuore vuoto 68x68 strada.jpg"))); // NOI18N                      
-                    HubLivelli HB = new HubLivelli(f);
+                    HubLivelli HB = new HubLivelli(f);  //si ritorna all'hub livelli
                     f0.setVisible(false);
                     f0.clip.stop();
                     f0.clip.close();
@@ -1455,7 +1456,8 @@ public class MyKeyListener implements KeyListener {
     }
     
     /*
-      Questo metodo controlla se l'erba della mappa è stata tagliata tutta.
+      Questo metodo controlla se l'erba della mappa è stata tagliata tutta,
+      in tal caso interrompe il livello spegnendo la musica e tornando all'hub livelli.
       Commento solo il metodo del livello 0.
     */
     private void controllaFineLV0(){
